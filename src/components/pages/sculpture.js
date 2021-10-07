@@ -1,6 +1,24 @@
 import { GridList, GridListTile } from '@material-ui/core';
 import React from 'react';
 import { makeStyles } from "@material-ui/core/styles";
+import balloonWall from '../../assets/sculpture/balloonWall.jpg'
+import balloonWallAnim from '../../assets/sculpture/balloonWallAnim.gif'
+import fourthDim1 from '../../assets/sculpture/fourthDim1.JPG'
+import fourthDim2 from '../../assets/sculpture/fourthDim2.JPG'
+import fourthDim3 from '../../assets/sculpture/fourthDim3.JPG'
+import hoods1 from '../../assets/sculpture/hoods1.JPG'
+import hoods2 from '../../assets/sculpture/hoods2.JPG'
+import mathJoke1 from '../../assets/sculpture/mathJoke1.JPG'
+import mathJoke2 from '../../assets/sculpture/mathJoke2.JPG'
+import mathJoke3 from '../../assets/sculpture/mathJoke3.JPG'
+import mathJoke4 from '../../assets/sculpture/mathJoke4.JPG'
+import measurements from '../../assets/sculpture/measurements.JPG'
+import quantumRelations from '../../assets/sculpture/quantumRelations.JPG'
+import spine1 from '../../assets/sculpture/spine1.JPG'
+import spine2 from '../../assets/sculpture/spine2.JPG'
+
+
+
 
 const useStyles = makeStyles((theme) => ({
     artGrid: {
@@ -19,9 +37,21 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const sculptureImages = [
-    { img: "http://placekitten.com/200/200", title: "img1" },
-    { img: "http://placekitten.com/200/200", title: "img2" },
-    { img: "http://placekitten.com/200/200", title: "img3" },
+    { img: fourthDim1, title: "Fourth Dimension 1" },
+    { img: fourthDim2, title: "Fourth Dimension 2" },
+    { img: fourthDim3, title: "Fourth Dimension 3" },
+    { img: quantumRelations, title: "Quantum Relations" },
+    { img: measurements, title: "3 Yards" },
+    { img: spine1, title: "I've Got Your Back 1" },
+    { img: spine2, title: "I've Got Your Back 2" },
+    { img: balloonWall, title: "Dreams and Nightmares" },
+    { img: balloonWallAnim, title: "Dreams and Nightmares Animations" },
+    { img: hoods1, title: "When's the Last Time You Brushed? 1" },
+    { img: hoods2, title: "When's the Last Time You Brushed? 2" },
+    { img: mathJoke1, title: "The Engineer, the Physicist, and the Mathematician 1" },
+    { img: mathJoke2, title: "The Engineer, the Physicist, and the Mathematician 2" },
+    { img: mathJoke3, title: "The Engineer, the Physicist, and the Mathematician 3" },
+    { img: mathJoke4, title: "The Engineer, the Physicist, and the Mathematician 4" },
 ]
 
 export default function Sculpture () {
@@ -32,7 +62,7 @@ export default function Sculpture () {
             <div className={classes.header}>
                 Sculptures
             </div>
-            <GridList cellHeight={160} cols={3} className={classes.artGrid}>
+            <GridList cellHeight={300} cols={3} className={classes.artGrid}>
                 {sculptureImages.map((image) => (
                     <GridListTile className={classes.gridTile} key={image.img} cols={image.cols || 1}>
                         <img src={image.img} alt={image.title} />
