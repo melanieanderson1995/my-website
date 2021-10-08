@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
     footerContainer: {
         display: "flex",
         flexDirection: "column",
-        backgroundColor: "black",
+        backgroundColor: "#332e44",
         justifyContent: "center",
         alignSelf: "center"
     },

@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 24,
     paddingRight: 24,
     fontSize: 24,
+    color: "#fcfcf0"
   },
   title: {
     flexGrow: 1,
@@ -29,6 +30,10 @@ const useStyles = makeStyles((theme) => ({
     color: "black", 
     textDecoration: "none",
     fontSize: 24,
+  },
+  secondaryMenuItem: {
+    color: "#332e44",
+    fontSize: 20
   }
 }));
 
@@ -47,7 +52,7 @@ export default function Header() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ backgroundColor: "#025670" }}>
         <Toolbar>
           <div style={{ flexGrow: 1 }}>
             <Link to="/" className={classes.primaryLink}>
@@ -90,13 +95,13 @@ export default function Header() {
               }}
             >
               <Link to="/sculpture" className={classes.secondaryLink}>
-                <MenuItem onClick={handleClose} style={{fontSize: 20}}>Sculpture</MenuItem>
+                <MenuItem onClick={handleClose} className={classes.secondaryMenuItem}>Sculpture</MenuItem>
               </Link>
               <Link to="/illustration" className={classes.secondaryLink}>
-                <MenuItem onClick={handleClose} style={{fontSize: 20}}>Illustration</MenuItem>
+                <MenuItem onClick={handleClose} className={classes.secondaryMenuItem}>Illustration</MenuItem>
               </Link>
               <Link to="/tattoo" className={classes.secondaryLink}>
-                <MenuItem onClick={handleClose} style={{fontSize: 20}}>Tattoo</MenuItem>
+                <MenuItem onClick={handleClose} className={classes.secondaryMenuItem}>Tattoo</MenuItem>
               </Link>
             </Menu>
             <Link to="/news" className={classes.primaryLink}>

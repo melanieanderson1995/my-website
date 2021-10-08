@@ -9,6 +9,7 @@ import Tattoo from "./components/pages/tattoo.js";
 import News from "./components/pages/news.js";
 import Contact from "./components/pages/contact.js";
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import background from './assets/images/background.png'
 
 const theme = createMuiTheme({
   typography: {
@@ -20,7 +21,7 @@ const theme = createMuiTheme({
 
 function App() {
   return (
-    <>
+    <div style={{ backgroundImage: `url(${background})` }}>
       <ThemeProvider theme={theme}>
         <Router>
           <Header/>
@@ -33,7 +34,7 @@ function App() {
           <Route path="/contact" component={Contact} />
         </Router>
       </ThemeProvider>
-    </>
+    </div>
   );
 }
 

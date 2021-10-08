@@ -1,5 +1,5 @@
-import { GridList, GridListTile } from '@material-ui/core';
-import React from 'react';
+import { GridList, GridListTile, Modal, Card, IconButton, Fade } from '@material-ui/core';
+import React, {useState} from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import balloonWall from '../../assets/sculpture/balloonWall.jpg'
 import balloonWallAnim from '../../assets/sculpture/balloonWallAnim.gif'
@@ -16,9 +16,7 @@ import measurements from '../../assets/sculpture/measurements.JPG'
 import quantumRelations from '../../assets/sculpture/quantumRelations.JPG'
 import spine1 from '../../assets/sculpture/spine1.JPG'
 import spine2 from '../../assets/sculpture/spine2.JPG'
-
-
-
+import CloseIcon from "@material-ui/icons/Close";
 
 const useStyles = makeStyles((theme) => ({
     artGrid: {
@@ -30,10 +28,22 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         padding: 20,
         fontSize: 32,
+        color: "#332e44"
     },
     gridTile: {
-        '&:hover': {opacity: .7}
-    }
+        borderWidth: 5,
+        borderColor: "black",
+        '&:hover': {opacity: .7},
+    },
+    modalCard: {
+        flexDirection: "column",
+        padding: 20,
+        borderRadius: 20,
+    },
+    iconButtonRight: {
+        float: "right",
+        color: "#3E92CC",
+      },
   }));
 
 const sculptureImages = [
@@ -56,19 +66,50 @@ const sculptureImages = [
 
 export default function Sculpture () {
     const classes = useStyles();
+    const [open, setOpen] = React.useState(false);
+    const [itemIndex, setItemIndex] = React.useState(0);
+
+    const openCloseModal = () => {
+        setOpen(!open);
+    }
 
     return (
         <>
             <div className={classes.header}>
                 Sculptures
             </div>
-            <GridList cellHeight={300} cols={3} className={classes.artGrid}>
+            <GridList spacing={10} cellHeight={300} cols={3} className={classes.artGrid}>
                 {sculptureImages.map((image) => (
-                    <GridListTile className={classes.gridTile} key={image.img} cols={image.cols || 1}>
-                        <img src={image.img} alt={image.title} />
-                     </GridListTile>
+                    <Fade in={true} timeout={1500 + (sculptureImages.indexOf(image) * 500)}>
+                        <GridListTile onClick={() => {
+                            openCloseModal();
+                            setItemIndex(sculptureImages.indexOf(image))
+                            }} className={classes.gridTile} key={image.img} cols={image.cols || 1}>
+                            <img src={image.img} alt={image.title} />
+                        </GridListTile>
+                     </Fade>
                 ))}
             </GridList>
+            <Modal 
+            open={open}
+            onClose={openCloseModal}
+            outline={0}
+            style={{justifyContent: "center", display: "flex", alignItems: "center", outline: "none"}}
+            >
+                <div>
+                    <Card className={classes.modalCard}>
+                        <IconButton
+                        className={classes.iconButtonRight}
+                        onClick={() => {
+                        openCloseModal();
+                        }}
+                        >
+                            <CloseIcon />
+                        </IconButton>
+                        <img style={{ height: 500 }} src={sculptureImages[itemIndex].img} alt={sculptureImages[itemIndex].title}></img>
+                    </Card>
+                </div>
+            </Modal>
         </>
     )
 }
