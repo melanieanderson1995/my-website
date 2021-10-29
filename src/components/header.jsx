@@ -5,7 +5,6 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
 import Logo from "../assets/images/websiteHeader.jpg"
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -40,7 +39,7 @@ export default function Header() {
       <AppBar position="static">
         <Toolbar>
           <div style={{flexGrow: 1}}>
-          <img src={Logo} style={{width: 300, float: "left"}} />
+          <img src={Logo} style={{width: 300, float: "left"}} alt="" />
           </div>
           <div>
           <Button className={classes.menuButton} color="inherit"><Typography>Contact</Typography></Button>
