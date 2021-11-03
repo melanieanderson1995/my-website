@@ -1,6 +1,10 @@
 import { GridList, GridListTile, Modal, Card, IconButton, Fade, Grow } from '@material-ui/core';
 import React, {useState} from 'react';
 import { makeStyles } from "@material-ui/core/styles";
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 import CloseIcon from "@material-ui/icons/Close";
 import abstractExperiment from "../../assets/illustration/abstractExperiment.jpg"
 import antarcticats from "../../assets/illustration/antarcticats.jpg"
@@ -35,7 +39,7 @@ import hummingbird from "../../assets/illustration/hummingbird.jpg"
 import lamprey from "../../assets/illustration/lamprey.jpg"
 import liteweight from "../../assets/illustration/liteweight.jpg"
 import longFingers from "../../assets/illustration/longFingers.jpg"
-import lunarcy from "../../assets/illustration/lunarcy.jpg"
+import lunarcy from "../../assets/illustration/lunarcy.JPG"
 import mantises from "../../assets/illustration/mantises.jpg"
 import manyLeggedDog from "../../assets/illustration/manyLeggedDog.jpg"
 import mcEscher from "../../assets/illustration/mcEscher.jpg"
@@ -60,7 +64,7 @@ import teethFalling from "../../assets/illustration/teethFalling.jpg"
 import tiedUp from "../../assets/illustration/tiedUp.jpg"
 import treeNightmare from "../../assets/illustration/treeNightmare.jpg"
 import wall from "../../assets/illustration/wall.jpg"
-import waterTrash from "../../assets/illustration/waterTrash.jpg"
+import waterTrash from "../../assets/illustration/waterTrash.png"
 import jimmyMayo from "../../assets/illustration/jimmyMayo.jpg"
 import screechOwl from "../../assets/illustration/screechOwl.png"
 import kingfisher from "../../assets/illustration/kingfisher.png"
@@ -83,19 +87,19 @@ const useStyles = makeStyles((theme) => ({
     gridTile: {
         borderWidth: 5,
         borderColor: "black",
-        '&:hover': {opacity: .7},
+        '&.hover': {opacity: .7},
     },
     modalCard: {
         padding: 20,
         borderRadius: 20,
-        backgroundColor: "#f5f5f5"
+        backgroundColor: "#f5f5f5",
     },
     iconButtonRight: {
         float: "right",
         color: "black",
       },
     imageTitle: {
-        fontSize: 24,
+        fontSize: 28,
         fontWeight: 600,
         marginTop: 10,
         marginBottom: 10,
@@ -114,9 +118,22 @@ const useStyles = makeStyles((theme) => ({
         color: "black",
     },
     imageDescription: {
-        fontsize: 20,
+        fontSize: 20,
         margin: 0,
         color: "black",
+    },
+    select: {
+        width: 250,
+        color: "white",
+        backgroundColor: "#3c3c3c",
+        marginBottom: 20,
+        "& .Mui-focused .MuiOutlinedInput-notchedOutline": {
+            outline: 'none'
+         },
+    },
+    menuItem: {
+        fontFamily: "Caveat",
+        fontSize: 24,
     }
   }));
 
@@ -135,7 +152,7 @@ const illustrationImages = [
     { img: brokenFingers, title: "Baby Carrots", year: "2017", description: "Ever hit your thumb with a hammer? Ever do it again? Created for UAL: CCA Semester Show.", materials: "Pen" },
     { img: butterflyNebula, title: "Wings of Stars", year: "2015", description: "The Butterfly Nebula.", materials: "Graphite" },
     { img: capsuleCorp, title: "Album Cover for Capsule Corp (PGH)", year: "2017", description: "An album design for Pittsburgh, PA, band, Capsule Corp." },
-    { img: cockroach, title: "A Kafka-Esque Nightmare", year: "" },
+    { img: cockroach, title: "A Kafka-Esque Nightmare", year: "2017", description: "If you read Metamorphosis backwards, it's a heartwarming story of a family who's love of a cockroach turns him into a man.", materials: "Pen" },
     { img: comicSans, title: "Graphic Design is Important", year: "2016", description: "Don't abuse comic sans, it's a tool not the only tool.", materials: "Pen, digital" },
     { img: cosmicRay, title: "A Cosmic Ray", year: "2017", description: "A comrade of the world turtle.", materials: "Pen" },
     { img: creationOfAdam, title: "Creation of Ad-Helm", year: "2015", description: "A rendition of the Creation of Adam, done in the style of Stewart Helm.", materials: "Pen" },
@@ -184,25 +201,82 @@ const illustrationImages = [
     { img: treeNightmare, title: "Fear of Heights", year: "2017", description: "I could never just let go; created for UAL: CCA Semester Show.", materials: "Pen" },
     { img: wall, title: "Tripped and Fell", year: "2016", description: "View of a wall while on LSD and lying on the sidewalk.", materials: "Marker" },
     { img: waterTrash, title: "Album cover for Watertrash (PGH)", year: "2018", description: "An album design for Pittsburgh, PA, band, Water Trash.", materials: "Pen" },
+]
 
+const sortOptions = [
+    {option: "title", title: "Title"},
+    {option: "yearAsc", title: "Year Ascending"},
+    {option: "yearDesc", title: "Year Descending"},
 ]
 
 export default function Illustration () {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const [itemIndex, setItemIndex] = React.useState(0);
+    const [images, setImages] = React.useState(illustrationImages);
+    const [sortOption, setSortOption] = React.useState("none");
 
     const openCloseModal = () => {
         setOpen(!open);
     }
+
+    const handleChange = (event) => {
+        setSortOption(event.target.value);
+        console.log("SORTING", sortOption);
+        switch(event.target.value) {
+            case "title":
+                setImages(illustrationImages.sort((a, b) => {
+                if (a.title > b.title) return 1;
+                if (a.title < b.title) return -1;
+                return 0;
+                }))
+                break;
+            case "yearAsc":
+                setImages(illustrationImages.sort((a, b) => a.year - b.year))
+                break;
+            case "yearDesc":
+                setImages(illustrationImages.sort((a, b) => b.year - a.year))
+                break;
+            default:
+                setImages(illustrationImages);
+        }
+      };
 
     return (
         <>
             <div className={classes.header}>
                 Illustrations and Paintings
             </div>
+            <FormControl style={{ display: "flex", alignItems: "center", justifyContent: "center"}} >
+                <div>
+                    <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={sortOption}
+                        label="Sort by"
+                        disableUnderline
+                        defaultValue="none"
+                        onChange={handleChange}
+                        className={classes.select}
+                        style={{ color: "white"}}
+                    >
+                        <MenuItem disabled value="none">
+                            <div className={classes.menuItem}>
+                                Sort by...
+                            </div>
+                        </MenuItem>
+                        { sortOptions.map((option) => (
+                            <MenuItem value={option.option} key={option}>
+                                <div className={classes.menuItem}>
+                                    {option.title}
+                                </div>
+                            </MenuItem>
+                        ))}
+                    </Select>
+                </div>
+            </FormControl>
             <GridList spacing={10} cellHeight={300} cols={3} className={classes.artGrid}>
-                {illustrationImages.map((image) => (
+                {images.map((image) => (
                     <Fade in={true} timeout={1500 + (illustrationImages.indexOf(image) * 500)}>
                         <GridListTile onClick={() => {
                             openCloseModal();
@@ -217,7 +291,9 @@ export default function Illustration () {
                 open={open}
                 onClose={openCloseModal}
                 outline={0}
-                style={{justifyContent: "center", display: "flex", alignItems: "center", outline: "none"}}
+                style={{justifyContent: "center", display: "flex", alignItems: "center", outline: "none", 
+                marginLeft: 100,
+                marginRight: 100, }}
                 >
                     <div>
                         <Grow in={open} timeout={1000}>
@@ -237,13 +313,25 @@ export default function Illustration () {
                                         {illustrationImages[itemIndex].title}
                                         </p>
                                         <p className={classes.imageYear}>
-                                            Year Completed: {illustrationImages[itemIndex].year}
+                                            <span style={{ fontWeight: 600 }}>
+                                                Year Completed:
+                                            </span> 
+                                            {' '}
+                                            {illustrationImages[itemIndex].year}
                                         </p>
                                         <p className={classes.imageMaterials}>
-                                            Materials: {illustrationImages[itemIndex].materials}
+                                            <span style={{ fontWeight: 600 }}>
+                                                Materials: 
+                                            </span>
+                                            {' '}
+                                            {illustrationImages[itemIndex].materials}
                                         </p>
                                         <p className={classes.imageDescription}>
-                                            Description: {illustrationImages[itemIndex].description}
+                                            <span style={{ fontWeight: 600 }}>
+                                                Description: 
+                                            </span>
+                                            {' '}
+                                            {illustrationImages[itemIndex].description}
                                         </p>
                                     </div>
                                 </div>

@@ -1,6 +1,9 @@
 import { GridList, GridListTile, Modal, Card, IconButton, Fade, Grow } from '@material-ui/core';
 import React, {useState} from 'react';
 import { makeStyles } from "@material-ui/core/styles";
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 import balloonWall from '../../assets/sculpture/balloonWall.jpg'
 import balloonWallAnim from '../../assets/sculpture/balloonWallAnim.gif'
 import fourthDim1 from '../../assets/sculpture/fourthDim1.JPG'
@@ -29,11 +32,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         padding: 20,
         fontSize: 32,
-<<<<<<< Updated upstream
-        color: "black"
-=======
         color: "#f5f5f5"
->>>>>>> Stashed changes
     },
     gridTile: {
         borderWidth: 5,
@@ -72,6 +71,19 @@ const useStyles = makeStyles((theme) => ({
         fontsize: 20,
         margin: 0,
         color: "black",
+    },
+    select: {
+        width: 250,
+        color: "white",
+        backgroundColor: "#3c3c3c",
+        marginBottom: 20,
+        "& .Mui-focused .MuiOutlinedInput-notchedOutline": {
+            outline: 'none'
+         },
+    },
+    menuItem: {
+        fontFamily: "Caveat",
+        fontSize: 24,
     }
   }));
 
@@ -93,22 +105,80 @@ const sculptureImages = [
     { img: mathJoke4, title: "The Engineer, the Physicist, and the Mathematician 4" },
 ]
 
+const sortOptions = [
+    {option: "title", title: "Title"},
+    {option: "yearAsc", title: "Year Ascending"},
+    {option: "yearDesc", title: "Year Descending"},
+]
+
 export default function Sculpture () {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const [itemIndex, setItemIndex] = React.useState(0);
+    const [images, setImages] = React.useState(sculptureImages);
+    const [sortOption, setSortOption] = React.useState("none");
 
     const openCloseModal = () => {
         setOpen(!open);
     }
+
+    const handleChange = (event) => {
+        setSortOption(event.target.value);
+        console.log("SORTING", sortOption);
+        switch(event.target.value) {
+            case "title":
+                setImages(sculptureImages.sort((a, b) => {
+                if (a.title > b.title) return 1;
+                if (a.title < b.title) return -1;
+                return 0;
+                }))
+                break;
+            case "yearAsc":
+                setImages(sculptureImages.sort((a, b) => a.year - b.year))
+                break;
+            case "yearDesc":
+                setImages(sculptureImages.sort((a, b) => b.year - a.year))
+                break;
+            default:
+                setImages(sculptureImages);
+        }
+      };
 
     return (
         <>
             <div className={classes.header}>
                 Sculptures
             </div>
+            <FormControl style={{ display: "flex", alignItems: "center", justifyContent: "center"}} >
+                <div>
+                    <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={sortOption}
+                        label="Sort by"
+                        disableUnderline
+                        defaultValue="none"
+                        onChange={handleChange}
+                        className={classes.select}
+                        style={{ color: "white"}}
+                    >
+                        <MenuItem disabled value="none">
+                            <div className={classes.menuItem}>
+                                Sort by...
+                            </div>
+                        </MenuItem>
+                        { sortOptions.map((option) => (
+                            <MenuItem value={option.option} key={option}>
+                                <div className={classes.menuItem}>
+                                    {option.title}
+                                </div>
+                            </MenuItem>
+                        ))}
+                    </Select>
+                </div>
+            </FormControl>
             <GridList spacing={10} cellHeight={300} cols={3} className={classes.artGrid}>
-                {sculptureImages.map((image) => (
+                {images.map((image) => (
                     <Fade in={true} timeout={1500 + (sculptureImages.indexOf(image) * 500)}>
                         <GridListTile onClick={() => {
                             openCloseModal();
