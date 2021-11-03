@@ -61,6 +61,10 @@ import tiedUp from "../../assets/illustration/tiedUp.jpg"
 import treeNightmare from "../../assets/illustration/treeNightmare.jpg"
 import wall from "../../assets/illustration/wall.jpg"
 import waterTrash from "../../assets/illustration/waterTrash.jpg"
+import jimmyMayo from "../../assets/illustration/jimmyMayo.jpg"
+import screechOwl from "../../assets/illustration/screechOwl.png"
+import kingfisher from "../../assets/illustration/kingfisher.png"
+import swallow from "../../assets/illustration/swallow.png"
 import Footer from '../footer';
 
 
@@ -117,65 +121,69 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const illustrationImages = [
-    { img: abstractExperiment, title: "An Exercise in Chaos" },
-    { img: antarcticats, title: "Tshirt Design for Antarcticats (ATL)" },
-    { img: babyVeins, title: "Don't be Vain" },
-    { img: balletLeg, title: "Load-Bearing" },
-    { img: balloonJeff, title: "Jeff Takes Off" },
-    { img: bandFlyer, title: "Flyer for concert at Black Forge (PGH)" },
-    { img: bicycleFish, title: "A Jaunty Chap" },
-    { img: birth, title: "Conception Oven" },
-    { img: brokenFingers, title: "Baby Carrots" },
-    { img: butterflyNebula, title: "Wings of Stars" },
-    { img: capsuleCorp, title: "Album Cover for Capsule Corp (PGH)" },
-    { img: cockroach, title: "A Kafka-Esque Nightmare" },
-    { img: comicSans, title: "Graphic Design is Important" },
-    { img: cosmicRay, title: "A Cosmic Ray" },
-    { img: creationOfAdam, title: "Creation of Adam in the style of Stewart Helm" },
-    { img: dislocated, title: "Out of Place" },
-    { img: distantFutures, title: "Tshirt Design for Distant Futures (PGH)" },
-    { img: drinkingJeff, title: "Bottoms Up" },
-    { img: eyesOpen, title: "Can't Look Away" },
-    { img: finalsJeff, title: "Jeff does his Taxes" },
-    { img: flyingJeff, title: "Jeff Takes a Leap of Faith" },
-    { img: fullOfShit, title: "Full of Shit" },
-    { img: gasMask, title: "Flowery Scent" },
-    { img: goldenCactus, title: "The Golden Root-io" },
-    { img: hairyLegs, title: "Sexture" },
-    { img: headClouds, title: "Thought Bubbles" },
-    { img: headShot, title: "Before it Gets Worse" },
-    { img: headTubes, title: "Jacked In" },
-    { img: headTumor, title: "Of a Melon" },
-    { img: hummingbird, title: "Bird Bones" },
-    { img: lamprey, title: "Wow Ze Dong" },
-    { img: liteweight, title: "Album Cover for Liteweight (PGH)" },
-    { img: longFingers, title: "Delicate Touch" },
-    { img: lunarcy, title: "Sheer Lunarcy" },
-    { img: mantises, title: "Man Eaters" },
-    { img: manyLeggedDog, title: "In Case One Falls Off" },
-    { img: mcEscher, title: "Circular Progress" },
-    { img: meltingEyeballs, title: "It's a Bit Warm" },
-    { img: mermaid, title: "Mermaids were Always Manatees" },
-    { img: mlady, title: "M'Lady" },
-    { img: mole, title: "Kim Jong Fun" },
-    { img: morelMan, title: "Morel and Upstanding Member of Society" },
-    { img: nishikie, title: "O(ak)verly Complex" },
-    { img: openVeins, title: "Bloodletting" },
-    { img: pezMan, title: "Eating Chalk" },
-    { img: pickingUp, title: "70s Carpeting" },
-    { img: pillarsOfCreation, title: "The Pillars" },
-    { img: poundingHeart, title: "Palps" },
-    { img: protoren, title: "All the King's Men" },
-    { img: sasquatch, title: "Lost in the Sauce" },
-    { img: separateHands, title: "Some Assembly Required" },
-    { img: skeletonCuddle, title: "Comfort from Within" },
-    { img: softBaby, title: "Soft in the Head" },
-    { img: spaceJeff, title: "No Sound in Space, Jeff" },
-    { img: teethFalling, title: "No Dental Coverage" },
-    { img: tiedUp, title: "I'm so Knotty" },
-    { img: treeNightmare, title: "Fear of Heights" },
-    { img: wall, title: "Tripped and Fell" },
-    { img: waterTrash, title: "Album cover for Watertrash (PGH)" },
+    { img: abstractExperiment, title: "An Exercise in Chaos", year: "2015", description: "My first and last foray into abstract two-dimensional, it gave me a panic attack.", materials: "Paper, paint, charcoal, oil pastel" },
+    { img: screechOwl, title: "Screech Owl", year: "2018", description: "A far more efficient owl than nature could produce; created for The Treachery of Birds, by Josh Brown.", materials: "Pen" },
+    { img: kingfisher, title: "Kingfisher", year: "2018", description: "A true descendant of dinosaurs; created for The Treachery of Birds, by Josh Brown.", materials: "Pen" },
+    { img: swallow, title: "Swallow", year: "2018", description: "Neck pouches are so sexy; created for The Treachery of Birds, by Josh Brown.", materials: "Pen" },
+    { img: antarcticats, title: "Tshirt Design for Antarcticats (ATL)", year: "2017", description: "An album design for Atlanta, GA, band, Water Trash.", materials: "Digital, pen" },
+    { img: babyVeins, title: "Don't be Vain", year: "2015", description: "Feel free to fill in the blank.", materials: "Ink, pen" },
+    { img: balletLeg, title: "Load-Bearing", year: "2015", description: "The careful balance of bones.", materials: "Charcoal" },
+    { img: balloonJeff, title: "Jeff Takes Off", year: "2016", description: "He wishes to leave this plane of existence", materials: "Digital" },
+    { img: bandFlyer, title: "Flyer for concert at Black Forge (PGH)", year: "2017", description: "Flyer for a local concert taking place at Black Forge Coffee House, Pittsburgh, PA.", materials: "pen" },
+    { img: bicycleFish, title: "A Jaunty Chap", year: "2017", description: "Design for a tattoo client, who requested a fish on a bicycle.", materials: "Pen" },
+    { img: birth, title: "Conception Oven", year: "2017", description: "It's like Alien, except for you're biologically geared to love it; created for UAL: CCA Semester Show", materials: "Pen" },
+    { img: brokenFingers, title: "Baby Carrots", year: "2017", description: "Ever hit your thumb with a hammer? Ever do it again? Created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: butterflyNebula, title: "Wings of Stars", year: "2015", description: "The Butterfly Nebula.", materials: "Graphite" },
+    { img: capsuleCorp, title: "Album Cover for Capsule Corp (PGH)", year: "2017", description: "An album design for Pittsburgh, PA, band, Capsule Corp." },
+    { img: cockroach, title: "A Kafka-Esque Nightmare", year: "" },
+    { img: comicSans, title: "Graphic Design is Important", year: "2016", description: "Don't abuse comic sans, it's a tool not the only tool.", materials: "Pen, digital" },
+    { img: cosmicRay, title: "A Cosmic Ray", year: "2017", description: "A comrade of the world turtle.", materials: "Pen" },
+    { img: creationOfAdam, title: "Creation of Ad-Helm", year: "2015", description: "A rendition of the Creation of Adam, done in the style of Stewart Helm.", materials: "Pen" },
+    { img: dislocated, title: "Out of Place", year: "2016", description: "Hold your breath, you'll feel a pop.", materials: "Graphite" },
+    { img: distantFutures, title: "Tshirt Design for Distant Futures (PGH)", year: "2017", description: "An Tshirt design for Pittsburgh, PA, band, Distant Futures.", materials: "Pen" },
+    { img: drinkingJeff, title: "Bottoms Up", year: "2016", description: "Jeff unwinds for the evening.", materials: "Digital" },
+    { img: eyesOpen, title: "Can't Look Away", year: "2017", description: "It's like watching a trainwreck; Created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: finalsJeff, title: "Jeff does his Taxes", year: "2016", description: "Jeff is just like you and me, he dreads April.", materials: "Digital" },
+    { img: flyingJeff, title: "Jeff Takes a Leap of Faith", year: "2016", description: "Without clothes, Jeff flies more freely than you or I.", materials: "Digital" },
+    { img: fullOfShit, title: "Full of Shit", year: "2016", description: "You are what you eat.", materials: "Pen" },
+    { img: gasMask, title: "Flowery Scent", year: "2016", description: "It's just too darn fresh.", materials: "Pen, collage" },
+    { img: goldenCactus, title: "The Golden Root-io", year: "2017", description: "If it fits, it sits.", materials: "Colored pencils" },
+    { img: hairyLegs, title: "Sexture", year: "2017", description: "Hey girl, those legs go all the way up?", materials: "Pen" },
+    { img: headClouds, title: "Thought Bubbles", year: "2017", description: "So many thoughts for such a little head; created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: headShot, title: "Before it Gets Worse", year: "2017", description: "Quick reactions save lives; created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: headTubes, title: "Jacked In", year: "2017", description: "Now who's in the Matrix?", materials: "Pen" },
+    { img: headTumor, title: "Of a Melon", year: "2017", description: "Some tumors grow teeth, did you know that? Created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: hummingbird, title: "Bird Bones", year: "2015", description: "They may as well be toothpicks.", materials: "Pen" },
+    { img: jimmyMayo, title: "Album cover for Jimmy Mayo (PGH)", year: "2018", description: "An album design for Pittsburgh, PA, band, Jimmy Mayo.", materials: "Pen"}
+    { img: liteweight, title: "Album Cover for Liteweight (PGH)", year: "2017", description: "An album design for Pittsburgh, PA, band, Liteweight.", materials: "Watercolor, pen, digital" },
+    { img: longFingers, title: "Delicate Touch", year: "2017", description: "How it feels to have acrylic nails; created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: lunarcy, title: "Sheer Lunarcy", year: "2015", description: "Self portrait in front of the Eridans Super Void.", materials: "Paint, paper" },
+    { img: mantises, title: "Man Eaters", year: "2016", description: "A powerful prayer laid low", materials: "Pen" },
+    { img: manyLeggedDog, title: "In Case One Falls Off", year: "2016", description: "I had a fear as a child my pets would lose limbs. So I gave him some extra, just in case.", materials: "Digital" },
+    { img: mcEscher, title: "Circular Progress", year: "2016", description: "This hand helps this hand, helps this hand, helps this hand....", materials: "Watercolor, pen" },
+    { img: meltingEyeballs, title: "It's a Bit Warm", year: "2017", description: "These aren't tears; created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: mermaid, title: "Mermaids were Always Manatees", year: "2017", description: "Mermaids don't own razors. Or chapstick; created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: mlady, title: "M'Lady", year: "2016", description: "And a tip of the hat to you, sir.", materials: "Pen" },
+    { img: lamprey, title: "Wow Ze Dong", year: "2015", description: "Part of the Dick-tators series, inserting unique animals into classic propaganda posters.", materials: "Marker, paint" },
+    { img: mole, title: "Kim Jong Fun", year: "2015", description: "Part of the Dick-tators series, inserting unique animals into classic propaganda posters.", materials: "Marker, paint" },
+    { img: morelMan, title: "Morel and Upstanding Member of Society", year: "2017", description: "He thrives in the moist corpse of capitalism", materials: "Pen, markers" },
+    { img: nishikie, title: "O(ak)verly Complex", year: "2017", description: "More details? Yes, let's.", materials: "Pen" },
+    { img: openVeins, title: "Bloodletting", year: "2017", description: "Let the evil drain out; created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: pezMan, title: "Eating Chalk", year: "2017", description: "Kch-CHUNK.", materials: "Pen" },
+    { img: pickingUp, title: "70s Carpeting", year: "2017", description: "Shag carpet is far too sensory; created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: pillarsOfCreation, title: "The Pillars", year: "2016", description: "The Pillars of Creation.", materials: "Colored pencils" },
+    { img: poundingHeart, title: "Palps", year: "2017", description: "'We need to talk'; created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: protoren, title: "All the King's Men", year: "2016", description: "A protorenaissance take on a classic tale.", materials: "Paper, marker" },
+    { img: sasquatch, title: "Lost in the Sauce", year: "2017", description: "Sas ate some bad mushrooms. Design for a tattoo client, who requested a sasquatch.", materials: "Pen" },
+    { img: separateHands, title: "Some Assembly Required", year: "2017", description: "I was born with incredibly loose joints, but cracking them does feel amazing; created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: skeletonCuddle, title: "Comfort from Within", year: "2017", description: "What's inside you can never leave; created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: softBaby, title: "Soft in the Head", year: "2017", description: "Never drop a baby, their skulls aren't real yet; created for UAL: CCA Semester Show." },
+    { img: spaceJeff, title: "No Sound in Space, Jeff", year: "2016", description: "Our first encounter with Quiet Man Jeff, an origin story.", materials: "Digital" },
+    { img: teethFalling, title: "No Dental Coverage", year: "2017", description: "Don't forget to brush; created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: tiedUp, title: "I'm so Knotty", year: "2017", description: "First world choice paralysis. Or sleep paralysis. Some sort of paralysis; created for UAL: CCA Semester Show", materials: "Pen" },
+    { img: treeNightmare, title: "Fear of Heights", year: "2017", description: "I could never just let go; created for UAL: CCA Semester Show.", materials: "Pen" },
+    { img: wall, title: "Tripped and Fell", year: "2016", description: "View of a wall while on LSD and lying on the sidewalk.", materials: "Marker" },
+    { img: waterTrash, title: "Album cover for Watertrash (PGH)", year: "2018", description: "An album design for Pittsburgh, PA, band, Water Trash.", materials: "Pen" },
 
 ]
 
@@ -229,13 +237,13 @@ export default function Illustration () {
                                         {illustrationImages[itemIndex].title}
                                         </p>
                                         <p className={classes.imageYear}>
-                                            Year Completed: 
+                                            Year Completed: {illustrationImages[itemIndex].year}
                                         </p>
                                         <p className={classes.imageMaterials}>
-                                            Materials: 
+                                            Materials: {illustrationImages[itemIndex].materials}
                                         </p>
                                         <p className={classes.imageDescription}>
-                                            Description: 
+                                            Description: {illustrationImages[itemIndex].description}
                                         </p>
                                     </div>
                                 </div>
