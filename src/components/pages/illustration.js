@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         padding: 20,
         fontSize: 32,
-        color: "#332e44"
+        color: "#f5f5f5"
     },
     gridTile: {
         borderWidth: 5,
@@ -88,35 +88,35 @@ const useStyles = makeStyles((theme) => ({
     modalCard: {
         padding: 20,
         borderRadius: 20,
-        backgroundColor: "#fffff7"
+        backgroundColor: "#f5f5f5"
     },
     iconButtonRight: {
         float: "right",
-        color: "#332e44",
+        color: "black",
       },
     imageTitle: {
         fontSize: 24,
         fontWeight: 600,
         marginTop: 10,
         marginBottom: 10,
-        color: "#332e44",
+        color: "black",
     },
     imageYear: {
         fontSize: 20,
         marginBottom: 10,
         marginTop: 0,
-        color: "#332e44",
+        color: "black",
     },
     imageMaterials: {
         fontSize: 20,
         marginBottom: 10,
         marginTop: 0,
-        color: "#332e44",
+        color: "black",
     },
     imageDescription: {
         fontsize: 20,
         margin: 0,
-        color: "#332e44",
+        color: "black",
     }
   }));
 
@@ -154,7 +154,7 @@ const illustrationImages = [
     { img: headTubes, title: "Jacked In", year: "2017", description: "Now who's in the Matrix?", materials: "Pen" },
     { img: headTumor, title: "Of a Melon", year: "2017", description: "Some tumors grow teeth, did you know that? Created for UAL: CCA Semester Show.", materials: "Pen" },
     { img: hummingbird, title: "Bird Bones", year: "2015", description: "They may as well be toothpicks.", materials: "Pen" },
-    { img: jimmyMayo, title: "Album cover for Jimmy Mayo (PGH)", year: "2018", description: "An album design for Pittsburgh, PA, band, Jimmy Mayo.", materials: "Pen"}
+    { img: jimmyMayo, title: "Album cover for Jimmy Mayo (PGH)", year: "2018", description: "An album design for Pittsburgh, PA, band, Jimmy Mayo.", materials: "Pen"},
     { img: liteweight, title: "Album Cover for Liteweight (PGH)", year: "2017", description: "An album design for Pittsburgh, PA, band, Liteweight.", materials: "Watercolor, pen, digital" },
     { img: longFingers, title: "Delicate Touch", year: "2017", description: "How it feels to have acrylic nails; created for UAL: CCA Semester Show.", materials: "Pen" },
     { img: lunarcy, title: "Sheer Lunarcy", year: "2015", description: "Self portrait in front of the Eridans Super Void.", materials: "Paint, paper" },

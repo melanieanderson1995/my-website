@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         padding: 20,
         fontSize: 32,
-        color: "#332e44"
+        color: "black"
     },
     gridTile: {
         borderWidth: 5,
@@ -24,35 +24,35 @@ const useStyles = makeStyles((theme) => ({
     modalCard: {
         padding: 20,
         borderRadius: 20,
-        backgroundColor: "#fffff7"
+        backgroundColor: "#f5f5f5"
     },
     iconButtonRight: {
         float: "right",
-        color: "#332e44",
+        color: "black",
       },
     imageTitle: {
         fontSize: 24,
         fontWeight: 600,
         marginTop: 10,
         marginBottom: 10,
-        color: "#332e44",
+        color: "black",
     },
     imageYear: {
         fontSize: 20,
         marginBottom: 10,
         marginTop: 0,
-        color: "#332e44",
+        color: "black",
     },
     imageMaterials: {
         fontSize: 20,
         marginBottom: 10,
         marginTop: 0,
-        color: "#332e44",
+        color: "black",
     },
     imageDescription: {
         fontsize: 20,
         margin: 0,
-        color: "#332e44",
+        color: "black",
     }
   }));
 

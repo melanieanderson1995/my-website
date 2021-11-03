@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 24,
     paddingRight: 24,
     fontSize: 24,
-    color: "#fcfcf0"
+    color: "#f5f5f5"
   },
   title: {
     flexGrow: 1,
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 24,
   },
   secondaryMenuItem: {
-    color: "#332e44",
+    color: "black",
     fontSize: 20
   }
 }));
