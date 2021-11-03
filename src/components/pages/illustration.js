@@ -40,7 +40,6 @@ import lamprey from "../../assets/illustration/lamprey.jpg"
 import liteweight from "../../assets/illustration/liteweight.jpg"
 import longFingers from "../../assets/illustration/longFingers.jpg"
 import lunarcy from "../../assets/illustration/lunarcy.JPG"
-import mantises from "../../assets/illustration/mantises.jpg"
 import manyLeggedDog from "../../assets/illustration/manyLeggedDog.jpg"
 import mcEscher from "../../assets/illustration/mcEscher.jpg"
 import meltingEyeballs from "../../assets/illustration/meltingEyeballs.jpg"
@@ -175,7 +174,6 @@ const illustrationImages = [
     { img: liteweight, title: "Album Cover for Liteweight (PGH)", year: "2017", description: "An album design for Pittsburgh, PA, band, Liteweight.", materials: "Watercolor, pen, digital" },
     { img: longFingers, title: "Delicate Touch", year: "2017", description: "How it feels to have acrylic nails; created for UAL: CCA Semester Show.", materials: "Pen" },
     { img: lunarcy, title: "Sheer Lunarcy", year: "2015", description: "Self portrait in front of the Eridans Super Void.", materials: "Paint, paper" },
-    { img: mantises, title: "Man Eaters", year: "2016", description: "A powerful prayer laid low", materials: "Pen" },
     { img: manyLeggedDog, title: "In Case One Falls Off", year: "2016", description: "I had a fear as a child my pets would lose limbs. So I gave him some extra, just in case.", materials: "Digital" },
     { img: mcEscher, title: "Circular Progress", year: "2016", description: "This hand helps this hand, helps this hand, helps this hand....", materials: "Watercolor, pen" },
     { img: meltingEyeballs, title: "It's a Bit Warm", year: "2017", description: "These aren't tears; created for UAL: CCA Semester Show.", materials: "Pen" },
