@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   primaryLink: {
-    color: "white",
+    color: "#f5f5f5",
     textDecoration: "none",
   },
   secondaryLink: {
@@ -52,7 +52,7 @@ export default function Header() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{ backgroundColor: "#025670" }}>
+      <AppBar position="static" style={{ backgroundColor: "#1e1e1e" }}>
         <Toolbar>
           <div style={{ flexGrow: 1 }}>
             <Link to="/" className={classes.primaryLink}>
@@ -83,6 +83,7 @@ export default function Header() {
               id="simple-menu"
               anchorEl={anchorEl}
               keepMounted
+              style={{ color: "blue"}}
               open={Boolean(anchorEl)}
               onClose={handleClose}
               anchorOrigin={{

@@ -29,7 +29,11 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         padding: 20,
         fontSize: 32,
+<<<<<<< Updated upstream
         color: "black"
+=======
+        color: "#f5f5f5"
+>>>>>>> Stashed changes
     },
     gridTile: {
         borderWidth: 5,
