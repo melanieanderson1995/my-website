@@ -1,5 +1,6 @@
 import React from 'react'
 import { makeStyles } from "@material-ui/core/styles";
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 const useStyles = makeStyles((theme) => ({
     footerContainer: {
@@ -33,12 +34,13 @@ export default function Footer () {
 
     return (
         <div className={classes.footerContainer}>
+            <section className={classes.footerSocialMedia}>
+                <FacebookIcon />
+            </section>
             <section className={classes.footerSubscription}>
                 <p className={classes.copyrightMessage}>
                     © Melanie Anderson 2021
                 </p>
-            </section>
-            <section className={classes.footerSocialMedia}>
             </section>
         </div>
     )
