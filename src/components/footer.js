@@ -1,6 +1,8 @@
 import React from 'react'
 import { makeStyles } from "@material-ui/core/styles";
 import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const useStyles = makeStyles((theme) => ({
     footerContainer: {
@@ -16,11 +18,14 @@ const useStyles = makeStyles((theme) => ({
         display: "flex",
         flexDirection: "column",
         textAlign: "center",
-        padding: 20
     },
     footerSocialMedia: {
+        justifyContent: "center",
+        alignItems: "center",
         display: "flex",
-        flexDirection: "row"
+        textAlign: "center",
+        flexDirection: "row",
+        paddingTop: 20,
     },
     copyrightMessage: {
         color: "white",
@@ -34,9 +39,17 @@ export default function Footer () {
 
     return (
         <div className={classes.footerContainer}>
-            <section className={classes.footerSocialMedia}>
-                <FacebookIcon />
-            </section>
+            <div className={classes.footerSocialMedia}>
+                <a href="https://www.facebook.com/laneandersontattoo" target="blank">
+                    <FacebookIcon style={{ color: "#f5f5f5", paddingRight: 20 }} />
+                </a>
+                <a href="https://www.instagram.com/laneandersonart/" target="blank">
+                    <InstagramIcon style={{ color: "#f5f5f5", paddingRight: 20 }} />
+                </a>
+                <a href="https://www.linkedin.com/in/lane-anderson-art/" target="blank">
+                    <LinkedInIcon style={{ color: "#f5f5f5"}} />
+                </a>
+            </div>
             <section className={classes.footerSubscription}>
                 <p className={classes.copyrightMessage}>
                     © Melanie Anderson 2021
