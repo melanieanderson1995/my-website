@@ -1657,7 +1657,7 @@
     "@emotion/cache" "^11.5.0"
     "prop-types" "^15.7.2"
 
-"@mui/styles@^5.0.0":
+"@mui/styles@^5.0.0", "@mui/styles@^5.0.2":
   "integrity" "sha512-ANYnMHpiWHcV0dMrzrdCzYm+kNU0f7Gc5nFLRDWF+8fWZ40K2Cg5eMRkOW/nmM5M0wtmDI+GFVsCXgZkNq89uw=="
   "resolved" "https://registry.npmjs.org/@mui/styles/-/styles-5.0.2.tgz"
   "version" "5.0.2"
