@@ -56,7 +56,7 @@ export default function Header() {
         <Toolbar>
           <div style={{ flexGrow: 1 }}>
             <Link to="/" className={classes.primaryLink}>
-              <div style={{ fontWeight: 600, fontSize: 32, color: "#f5f5f5"}}>
+              <div style={{ fontWeight: 600, fontSize: 28, color: "#f5f5f5"}}>
                 Lane Anderson Art
               </div>
             </Link>
