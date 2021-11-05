@@ -88,21 +88,21 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const sculptureImages = [
-    { img: fourthDim1, title: "Fourth Dimension 1" },
-    { img: fourthDim2, title: "Fourth Dimension 2" },
-    { img: fourthDim3, title: "Fourth Dimension 3" },
-    { img: quantumRelations, title: "Quantum Relations" },
-    { img: measurements, title: "3 Yards" },
-    { img: spine1, title: "I've Got Your Back 1" },
-    { img: spine2, title: "I've Got Your Back 2" },
-    { img: balloonWall, title: "Dreams and Nightmares" },
-    { img: balloonWallAnim, title: "Dreams and Nightmares Animations" },
-    { img: hoods1, title: "When's the Last Time You Brushed? 1" },
-    { img: hoods2, title: "When's the Last Time You Brushed? 2" },
-    { img: mathJoke1, title: "The Engineer, the Physicist, and the Mathematician 1" },
-    { img: mathJoke2, title: "The Engineer, the Physicist, and the Mathematician 2" },
-    { img: mathJoke3, title: "The Engineer, the Physicist, and the Mathematician 3" },
-    { img: mathJoke4, title: "The Engineer, the Physicist, and the Mathematician 4" },
+    { img: fourthDim1, title: "Fourth Dimension 1", year: "2019" },
+    { img: fourthDim2, title: "Fourth Dimension 2", year: "2019" },
+    { img: fourthDim3, title: "Fourth Dimension 3", year: "2019" },
+    { img: quantumRelations, title: "Quantum Relations", year: "2020" },
+    { img: measurements, title: "3 Yards", year: "2019" },
+    { img: spine1, title: "I've Got Your Back 1", year: "2014" },
+    { img: spine2, title: "I've Got Your Back 2", year: "2014" },
+    { img: balloonWall, title: "Dreams and Nightmares", year: "2017" },
+    { img: balloonWallAnim, title: "Dreams and Nightmares Animations", year: "2017" },
+    { img: hoods1, title: "When's the Last Time You Brushed? 1", year: "2015" },
+    { img: hoods2, title: "When's the Last Time You Brushed? 2", year: "2015" },
+    { img: mathJoke1, title: "The Engineer, the Physicist, and the Mathematician 1", year: "2014" },
+    { img: mathJoke2, title: "The Engineer, the Physicist, and the Mathematician 2", year: "2014" },
+    { img: mathJoke3, title: "The Engineer, the Physicist, and the Mathematician 3", year: "2014" },
+    { img: mathJoke4, title: "The Engineer, the Physicist, and the Mathematician 4", year: "2014" },
 ]
 
 const sortOptions = [
