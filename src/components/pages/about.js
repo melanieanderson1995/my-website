@@ -18,7 +18,7 @@ export default function About () {
                 <img src={profile} style={{ width: 400 }} alt="Lane Anderson"/>
                 <div style={{ alignItems: "center", justifyContent: "center", paddingLeft: 20 }}>
                     <div className={classes.description}>
-                        Artist Statement            
+                        My work centers around the idea of dressing up scientific research and data in friendly, familiar, and relatable coverings to make it more accessible and comprehendable to the average viewer. Each piece I create is representative of both the data and my experience with and understanding of it, sometimes resulting in scientifically accurate models, and other times producing abstract representations of the subject and concepts associated with it. I work primarily with handmade fiber and textiles to create my sculptures, with the intent of them being interactive or at least tactilely interesting. My role is as a translator between the academic and scientific world and the every day, sometimes exaggerating colors or shapes to evoke a stronger response from the viewer. My work seeks to smooth the sharp, unfriendly edges of data and research, and soften them into recognizable, relatable, and interesting shapes and colors, intended to increase interest and promote a positive experience with the subject of each piece.         
                     </div>
                     <br />
                     <div className={classes.description}>
