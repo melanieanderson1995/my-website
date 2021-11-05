@@ -44,7 +44,7 @@ function Item(props)
 export default function Home () {
     return (
         <div style={{ justifyContent: 'center', alignItems: 'center'}}>
-            <Carousel 
+            {/* <Carousel 
             indicatorIconButtonProps={{ style: {padding: '10px', color: '#3c3c3c'} }} 
             activeIndicatorIconButtonProps={{ style: {color: "#f5f5f5"} }}
             style={{ height: 500, backgroundColor: 'red' }}
@@ -52,7 +52,7 @@ export default function Home () {
                 {
                     carouselImages.map((item, i) => <Item key={i} item={item} /> )
                 }
-            </Carousel>
+            </Carousel> */}
             <Footer/>
         </div>
     )
