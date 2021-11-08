@@ -4,21 +4,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import balloonWall from '../../assets/sculpture/balloonWall.jpg'
-import balloonWallAnim from '../../assets/sculpture/balloonWallAnim.gif'
-import fourthDim1 from '../../assets/sculpture/fourthDim1.JPG'
-import fourthDim2 from '../../assets/sculpture/fourthDim2.JPG'
-import fourthDim3 from '../../assets/sculpture/fourthDim3.JPG'
-import hoods1 from '../../assets/sculpture/hoods1.JPG'
-import hoods2 from '../../assets/sculpture/hoods2.JPG'
 import mathJoke1 from '../../assets/sculpture/mathJoke1.JPG'
 import mathJoke2 from '../../assets/sculpture/mathJoke2.JPG'
 import mathJoke3 from '../../assets/sculpture/mathJoke3.JPG'
 import mathJoke4 from '../../assets/sculpture/mathJoke4.JPG'
-import measurements from '../../assets/sculpture/measurements.JPG'
-import quantumRelations from '../../assets/sculpture/quantumRelations.JPG'
-import spine1 from '../../assets/sculpture/spine1.JPG'
-import spine2 from '../../assets/sculpture/spine2.JPG'
 import CloseIcon from "@material-ui/icons/Close";
 import Footer from '../footer';
 
@@ -88,21 +77,7 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const sculptureImages = [
-    { img: fourthDim1, title: "Fourth Dimension 1", year: "2019" },
-    { img: fourthDim2, title: "Fourth Dimension 2", year: "2019" },
-    { img: fourthDim3, title: "Fourth Dimension 3", year: "2019" },
-    { img: quantumRelations, title: "Quantum Relations", year: "2020" },
-    { img: measurements, title: "3 Yards", year: "2019" },
-    { img: spine1, title: "I've Got Your Back 1", year: "2014" },
-    { img: spine2, title: "I've Got Your Back 2", year: "2014" },
-    { img: balloonWall, title: "Dreams and Nightmares", year: "2017" },
-    { img: balloonWallAnim, title: "Dreams and Nightmares Animations", year: "2017" },
-    { img: hoods1, title: "When's the Last Time You Brushed? 1", year: "2015" },
-    { img: hoods2, title: "When's the Last Time You Brushed? 2", year: "2015" },
     { img: mathJoke1, title: "The Engineer, the Physicist, and the Mathematician 1", year: "2014" },
-    { img: mathJoke2, title: "The Engineer, the Physicist, and the Mathematician 2", year: "2014" },
-    { img: mathJoke3, title: "The Engineer, the Physicist, and the Mathematician 3", year: "2014" },
-    { img: mathJoke4, title: "The Engineer, the Physicist, and the Mathematician 4", year: "2014" },
 ]
 
 const sortOptions = [
