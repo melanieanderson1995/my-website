@@ -11,8 +11,10 @@ public_folder: "images"
 
 
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: "Project"
+    name: "images"
+    format: "json"
+    extension: "json"
     files:
       - label: "About Page"
         name: "about"
