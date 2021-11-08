@@ -7,20 +7,20 @@ local_backend: true
 publish_mode: editorial_workflow
 
 media_folder: "public/images/"
-public_folder: "images"
+public_folder: "/images"
 
 
 collections:
-  - label: "Project"
+  - label: "Images"
     name: "images"
     format: "json"
     extension: "json"
-    files:
-      - label: "About Page"
-        name: "about"
-        file: "public/projects/images.json"
-        fields: # The fields for each document, usually in front matter
-          - {label: "type", name: "type", widget: "string"}
-          - {label: "id", name: "id", widget: "number"}
-          - {label: "title", name: "title", widget: "string"}
+    folder: "public/projects"
+    fields: # The fields for each document, usually in front matter
+      - {label: "type", name: "type", widget: "string"}
+      - {label: "id", name: "id", widget: "number"}
+      - {label: "title", name: "title", widget: "string"}
+      - {label: "year", name: "year", widget: "string"}
+      - {label: "description", name: "description", widget: "string"}
+      - {label: "materials", name: "materials", widget: "string"}
     
