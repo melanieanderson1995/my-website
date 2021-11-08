@@ -1,75 +1,12 @@
 import { GridList, GridListTile, Modal, Card, IconButton, Fade, Grow } from '@material-ui/core';
 import React, {useState} from 'react';
 import { makeStyles } from "@material-ui/core/styles";
-import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import CloseIcon from "@material-ui/icons/Close";
-import abstractExperiment from "../../assets/illustration/abstractExperiment.jpg"
-import antarcticats from "../../assets/illustration/antarcticats.jpg"
-import babyVeins from "../../assets/illustration/babyVeins.jpg"
-import balletLeg from "../../assets/illustration/balletLeg.jpg"
-import balloonJeff from "../../assets/illustration/balloonJeff.jpg"
-import bandFlyer from "../../assets/illustration/bandFlyer.jpg"
-import bicycleFish from "../../assets/illustration/bicycleFish.jpg"
-import birth from "../../assets/illustration/birth.jpg"
-import brokenFingers from "../../assets/illustration/brokenFingers.jpg"
-import butterflyNebula from "../../assets/illustration/butterflyNebula.jpg"
-import capsuleCorp from "../../assets/illustration/capsuleCorp.jpg"
-import cockroach from "../../assets/illustration/cockroach.jpg"
-import comicSans from "../../assets/illustration/comicSans.jpg"
-import cosmicRay from "../../assets/illustration/cosmicRay.jpg"
-import creationOfAdam from "../../assets/illustration/creationOfAdam.jpg"
-import dislocated from "../../assets/illustration/dislocated.jpg"
-import distantFutures from "../../assets/illustration/distantFutures.jpg"
-import drinkingJeff from "../../assets/illustration/drinkingJeff.jpg"
-import eyesOpen from "../../assets/illustration/eyesOpen.jpg"
-import finalsJeff from "../../assets/illustration/finalsJeff.jpg"
-import flyingJeff from "../../assets/illustration/flyingJeff.jpg"
-import fullOfShit from "../../assets/illustration/fullOfShit.jpg"
-import gasMask from "../../assets/illustration/gasMask.jpg"
-import goldenCactus from "../../assets/illustration/goldenCactus.jpg"
-import hairyLegs from "../../assets/illustration/hairyLegs.jpg"
-import headClouds from "../../assets/illustration/headClouds.jpg"
-import headShot from "../../assets/illustration/headShot.jpg"
-import headTubes from "../../assets/illustration/headTubes.jpg"
-import headTumor from "../../assets/illustration/headTumor.jpg"
-import hummingbird from "../../assets/illustration/hummingbird.jpg"
-import lamprey from "../../assets/illustration/lamprey.jpg"
-import liteweight from "../../assets/illustration/liteweight.jpg"
-import longFingers from "../../assets/illustration/longFingers.jpg"
-import lunarcy from "../../assets/illustration/lunarcy.JPG"
-import manyLeggedDog from "../../assets/illustration/manyLeggedDog.jpg"
-import mcEscher from "../../assets/illustration/mcEscher.jpg"
-import meltingEyeballs from "../../assets/illustration/meltingEyeballs.jpg"
-import mermaid from "../../assets/illustration/mermaid.jpg"
-import mlady from "../../assets/illustration/mlady.jpg"
-import mole from "../../assets/illustration/mole.jpg"
-import morelMan from "../../assets/illustration/morelMan.jpg"
-import nishikie from "../../assets/illustration/nishikie.jpg"
-import openVeins from "../../assets/illustration/openVeins.jpg"
-import pezMan from "../../assets/illustration/pezMan.jpg"
-import pickingUp from "../../assets/illustration/pickingUp.jpg"
-import pillarsOfCreation from "../../assets/illustration/pillarsOfCreation.jpg"
-import poundingHeart from "../../assets/illustration/poundingHeart.jpg"
-import protoren from "../../assets/illustration/protoren.jpg"
-import sasquatch from "../../assets/illustration/sasquatch.jpg"
-import separateHands from "../../assets/illustration/separateHands.jpg"
-import skeletonCuddle from "../../assets/illustration/skeletonCuddle.jpg"
-import softBaby from "../../assets/illustration/softBaby.jpg"
-import spaceJeff from "../../assets/illustration/spaceJeff.jpg"
-import teethFalling from "../../assets/illustration/teethFalling.jpg"
-import tiedUp from "../../assets/illustration/tiedUp.jpg"
-import treeNightmare from "../../assets/illustration/treeNightmare.jpg"
-import wall from "../../assets/illustration/wall.jpg"
-import waterTrash from "../../assets/illustration/waterTrash.png"
-import jimmyMayo from "../../assets/illustration/jimmyMayo.jpg"
-import screechOwl from "../../assets/illustration/screechOwl.png"
-import kingfisher from "../../assets/illustration/kingfisher.png"
-import swallow from "../../assets/illustration/swallow.png"
 import Footer from '../footer';
-
+import imageJson from '../../assets/images/images.json'
 
 const useStyles = makeStyles((theme) => ({
     artGrid: {
@@ -136,12 +73,6 @@ const useStyles = makeStyles((theme) => ({
     }
   }));
 
-const illustrationImages = [
-    { img: screechOwl, title: "Screech Owl", year: "2018", description: "A far more efficient owl than nature could produce; created for The Treachery of Birds, by Josh Brown.", materials: "Pen" },
-    { img: kingfisher, title: "Kingfisher", year: "2018", description: "A true descendant of dinosaurs; created for The Treachery of Birds, by Josh Brown.", materials: "Pen" },
-    { img: swallow, title: "Swallow", year: "2018", description: "Neck pouches are so sexy; created for The Treachery of Birds, by Josh Brown.", materials: "Pen" },
-]
-
 const sortOptions = [
     {option: "title", title: "Title"},
     {option: "yearAsc", title: "Year Ascending"},
@@ -152,8 +83,10 @@ export default function Illustration () {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const [itemIndex, setItemIndex] = React.useState(0);
-    const [images, setImages] = React.useState(illustrationImages);
+    const [images, setImages] = React.useState(imageJson.images.filter(image => image.type === 'illustration'));
     const [sortOption, setSortOption] = React.useState("none");
+
+console.log("IMAGES", images[0].path)
 
     const openCloseModal = () => {
         setOpen(!open);
@@ -164,20 +97,20 @@ export default function Illustration () {
         console.log("SORTING", sortOption);
         switch(event.target.value) {
             case "title":
-                setImages(illustrationImages.sort((a, b) => {
+                setImages(images.sort((a, b) => {
                 if (a.title > b.title) return 1;
                 if (a.title < b.title) return -1;
                 return 0;
                 }))
                 break;
             case "yearAsc":
-                setImages(illustrationImages.sort((a, b) => a.year - b.year))
+                setImages(images.sort((a, b) => a.year - b.year))
                 break;
             case "yearDesc":
-                setImages(illustrationImages.sort((a, b) => b.year - a.year))
+                setImages(images.sort((a, b) => b.year - a.year))
                 break;
             default:
-                setImages(illustrationImages);
+                setImages(images);
         }
       };
 
@@ -216,12 +149,12 @@ export default function Illustration () {
             </FormControl>
             <GridList spacing={10} cellHeight={300} cols={3} className={classes.artGrid}>
                 {images.map((image) => (
-                    <Fade in={true} timeout={1500 + (illustrationImages.indexOf(image) * 500)}>
+                    <Fade in={true} timeout={1500 + (images.indexOf(image) * 500)}>
                         <GridListTile onClick={() => {
                             openCloseModal();
-                            setItemIndex(illustrationImages.indexOf(image))
-                            }} className={classes.gridTile} key={image.img} cols={image.cols || 1}>
-                            <img src={image.img} alt={image.title} />
+                            setItemIndex(images.indexOf(image))
+                            }} className={classes.gridTile} key={image.id} cols={image.cols || 1}>
+                            <img src={image.path} alt={image.title} />
                         </GridListTile>
                      </Fade>
                 ))}
@@ -246,31 +179,31 @@ export default function Illustration () {
                                     <CloseIcon />
                                 </IconButton>
                                 <div style={{ flexDirection: "row", display: "flex" }}>
-                                    <img style={{ height: 500 }} src={illustrationImages[itemIndex].img} alt={illustrationImages[itemIndex].title}></img>
+                                    <img style={{ height: 500 }} src={images[itemIndex].img} alt={images[itemIndex].title}></img>
                                     <div style={{ flexDirection: "column", display: "flex", paddingRight: 40, paddingTop: 40, paddingLeft: 10 }}>
                                         <p className={classes.imageTitle}>
-                                        {illustrationImages[itemIndex].title}
+                                            {images[itemIndex].title}
                                         </p>
                                         <p className={classes.imageYear}>
                                             <span style={{ fontWeight: 600 }}>
                                                 Year Completed:
                                             </span> 
                                             {' '}
-                                            {illustrationImages[itemIndex].year}
+                                            {images[itemIndex].year}
                                         </p>
                                         <p className={classes.imageMaterials}>
                                             <span style={{ fontWeight: 600 }}>
                                                 Materials: 
                                             </span>
                                             {' '}
-                                            {illustrationImages[itemIndex].materials}
+                                            {images[itemIndex].materials}
                                         </p>
                                         <p className={classes.imageDescription}>
                                             <span style={{ fontWeight: 600 }}>
                                                 Description: 
                                             </span>
                                             {' '}
-                                            {illustrationImages[itemIndex].description}
+                                            {images[itemIndex].description}
                                         </p>
                                     </div>
                                 </div>
