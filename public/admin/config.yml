@@ -12,7 +12,7 @@ public_folder: "/images"
 
 collections:
   - label: "Project"
-    name: "images"
+    name: "artImages"
     format: "json"
     extension: "json"
     files:
@@ -20,7 +20,7 @@ collections:
         name: "images"
         file: "/public/projects/images.json"
         fields:
-          - name: imagesJson
+          - name: images
             label: JSON of Images
             widget: list
             fields: 
