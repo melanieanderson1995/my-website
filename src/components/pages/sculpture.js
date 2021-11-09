@@ -91,7 +91,7 @@ export default function Sculpture () {
     const [open, setOpen] = React.useState(false);
     const [itemIndex, setItemIndex] = React.useState(0);
     const [loading, setLoading] = useState(true);
-    const [images, setImages] = React.useState(sculptureImages);
+    const [images, setImages] = React.useState(null);
     const [sortOption, setSortOption] = React.useState("none");
 
     const openCloseModal = () => {

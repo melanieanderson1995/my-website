@@ -867,6 +867,15 @@
             "year": "2014",
             "description": "'I declare this to be the outside.'",
             "materials": "Metal, paper"
+        },
+        {
+            "type": "tattoo",
+            "id": 78,
+            "path": "/images/mathJoke4.JPG",
+            "title": "The Engineer, the Physicist, and the Mathematician (4)",
+            "year": "2014",
+            "description": "'I declare this to be the outside.'",
+            "materials": "Metal, paper"
         }
     ]
 }
