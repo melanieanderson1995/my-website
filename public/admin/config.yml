@@ -22,7 +22,7 @@ collections:
         fields:
           - name: images
             label: The Name of the List
-            widget: image
+            widget: list
             fields: 
               - {label: "type", name: "type", widget: "string"}
               - {label: "path", name: "path", widget: "image"}
