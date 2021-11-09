@@ -4,10 +4,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import mathJoke1 from '../../assets/sculpture/mathJoke1.JPG'
-import mathJoke2 from '../../assets/sculpture/mathJoke2.JPG'
-import mathJoke3 from '../../assets/sculpture/mathJoke3.JPG'
-import mathJoke4 from '../../assets/sculpture/mathJoke4.JPG'
 import CloseIcon from "@material-ui/icons/Close";
 import Footer from '../footer';
 
@@ -75,10 +71,6 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 24,
     }
   }));
-
-const sculptureImages = [
-    { img: mathJoke1, title: "The Engineer, the Physicist, and the Mathematician 1", year: "2014" },
-]
 
 const sortOptions = [
     {option: "title", title: "Title"},
