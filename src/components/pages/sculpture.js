@@ -1,5 +1,5 @@
 import { GridList, GridListTile, Modal, Card, IconButton, Fade, Grow } from '@material-ui/core';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -90,12 +90,33 @@ export default function Sculpture () {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const [itemIndex, setItemIndex] = React.useState(0);
+    const [loading, setLoading] = useState(true);
     const [images, setImages] = React.useState(sculptureImages);
     const [sortOption, setSortOption] = React.useState("none");
 
     const openCloseModal = () => {
         setOpen(!open);
     }
+
+    useEffect(() => {
+        fetch('projects/images.json'
+        ,{
+          headers : { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+           }
+        }
+        )
+          .then(response => {
+            console.log("RESPONSE", response)
+            return response.json();
+          })
+          .then(response => {
+            console.log("MY JSON", response)
+            setImages(response.images.filter(image => image.type === 'sculpture'));
+            setLoading(false);
+          })
+        }, [])
 
     const handleChange = (event) => {
         setSortOption(event.target.value);
@@ -152,57 +173,68 @@ export default function Sculpture () {
                     </Select>
                 </div>
             </FormControl>
-            <GridList spacing={10} cellHeight={300} cols={3} className={classes.artGrid}>
-                {images.map((image) => (
-                    <Fade in={true} timeout={1500 + (sculptureImages.indexOf(image) * 500)}>
-                        <GridListTile onClick={() => {
-                            openCloseModal();
-                            setItemIndex(sculptureImages.indexOf(image))
-                            }} className={classes.gridTile} key={image.img} cols={image.cols || 1}>
-                            <img src={image.img} alt={image.title} />
-                        </GridListTile>
-                     </Fade>
-                ))}
-            </GridList>
-                <Modal 
-                open={open}
-                onClose={openCloseModal}
-                outline={0}
-                style={{justifyContent: "center", display: "flex", alignItems: "center", outline: "none"}}
-                >
-                    <div>
-                        <Grow in={open} timeout={1000}>
-                            <Card className={classes.modalCard}>
-                                <IconButton
-                                className={classes.iconButtonRight}
-                                onClick={() => {
+            { !loading && (
+            <>
+                <GridList spacing={10} cellHeight={300} cols={3} className={classes.artGrid}>
+                    {images.map((image) => (
+                        <Fade in={true} timeout={1500 + (images.indexOf(image) * 500)}>
+                            <GridListTile onClick={() => {
                                 openCloseModal();
-                                }}
-                                >
-                                    <CloseIcon />
-                                </IconButton>
-                                <div style={{ flexDirection: "row", display: "flex" }}>
-                                    <img style={{ height: 500 }} src={sculptureImages[itemIndex].img} alt={sculptureImages[itemIndex].title}></img>
-                                    <div style={{ flexDirection: "column", display: "flex", paddingRight: 40, paddingTop: 40, paddingLeft: 10 }}>
-                                        <p className={classes.imageTitle}>
-                                        {sculptureImages[itemIndex].title}
-                                        </p>
-                                        <p className={classes.imageYear}>
-                                            Year Completed: 
-                                        </p>
-                                        <p className={classes.imageMaterials}>
-                                            Materials: 
-                                        </p>
-                                        <p className={classes.imageDescription}>
-                                            Description: 
-                                        </p>
+                                setItemIndex(images.indexOf(image))
+                                }} className={classes.gridTile} key={image.id} cols={image.cols || 1}>
+                                <img src={image.path} alt={image.title} />
+                            </GridListTile>
+                        </Fade>
+                    ))}
+                </GridList>
+                    <Modal 
+                    open={open}
+                    onClose={openCloseModal}
+                    outline={0}
+                    style={{justifyContent: "center", display: "flex", alignItems: "center", outline: "none", 
+                    marginLeft: 100,
+                    marginRight: 100, }}                    >
+                        <div>
+                            <Grow in={open} timeout={1000}>
+                                <Card className={classes.modalCard}>
+                                    <IconButton
+                                    className={classes.iconButtonRight}
+                                    onClick={() => {
+                                    openCloseModal();
+                                    }}
+                                    >
+                                        <CloseIcon />
+                                    </IconButton>
+                                    <div style={{ flexDirection: "row", display: "flex" }}>
+                                        <img style={{ height: 500 }} src={images[itemIndex].path} alt={images[itemIndex].title}></img>
+                                        <div style={{ flexDirection: "column", display: "flex", paddingRight: 40, paddingTop: 40, paddingLeft: 10 }}>
+                                            <p className={classes.imageTitle}>
+                                            {images[itemIndex].title}
+                                            </p>
+                                            <p className={classes.imageYear}>
+                                                Year Completed: 
+                                                {' '}
+                                                {images[itemIndex].year}
+                                            </p>
+                                            <p className={classes.imageMaterials}>
+                                                Materials: 
+                                                {' '}
+                                                {images[itemIndex].materials}
+                                            </p>
+                                            <p className={classes.imageDescription}>
+                                                Description: 
+                                                {' '}
+                                                {images[itemIndex].description}
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </Card>
-                        </Grow>
-                    </div>
-                </Modal>
-                <Footer/>
+                                </Card>
+                            </Grow>
+                        </div>
+                    </Modal>
+                </>
+            )}
+            <Footer/>
         </>
     )
 }

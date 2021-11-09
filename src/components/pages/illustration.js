@@ -1,5 +1,5 @@
 import { GridList, GridListTile, Modal, Card, IconButton, Fade, Grow } from '@material-ui/core';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -8,6 +8,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import Footer from '../footer';
 import abstractExperiment from '../../assets/illustration/abstractExperiment.jpg'
 import imageJson from '../../assets/images/images.json'
+import { typeOf } from 'react-is';
 
 const useStyles = makeStyles((theme) => ({
     artGrid: {
@@ -84,10 +85,29 @@ export default function Illustration () {
     const classes = useStyles();
     const [open, setOpen] = React.useState(false);
     const [itemIndex, setItemIndex] = React.useState(0);
-    const [images, setImages] = React.useState(imageJson.images.filter(image => image.type === 'illustration'));
+    const [images, setImages] = useState([]);
+    const [loading, setLoading] = useState(true);
     const [sortOption, setSortOption] = React.useState("none");
 
-console.log("IMAGES", images[0].path)
+    useEffect(() => {
+    fetch('projects/images.json'
+    ,{
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+    }
+    )
+      .then(response => {
+        console.log("RESPONSE", response)
+        return response.json();
+      })
+      .then(response => {
+        console.log("MY JSON", response)
+        setImages(response.images.filter(pic => pic.type === 'illustration'));
+        setLoading(false);
+      })
+    }, [])
 
     const openCloseModal = () => {
         setOpen(!open);
@@ -148,72 +168,74 @@ console.log("IMAGES", images[0].path)
                     </Select>
                 </div>
             </FormControl>
-            <GridList spacing={10} cellHeight={300} cols={3} className={classes.artGrid}>
-                {images.map((image) => {
-                    return (
-                    <Fade in={true} timeout={1500 + (images.indexOf(image) * 500)}>
-                        <GridListTile onClick={() => {
-                            openCloseModal();
-                            setItemIndex(images.indexOf(image))
-                            }} className={classes.gridTile} key={image.id} cols={image.cols || 1}>
-                            <img src={image.data} alt={image.title} />
-                        </GridListTile>
-                     </Fade>
-                    )
-                })}
-            </GridList>
-                <Modal 
-                open={open}
-                onClose={openCloseModal}
-                outline={0}
-                style={{justifyContent: "center", display: "flex", alignItems: "center", outline: "none", 
-                marginLeft: 100,
-                marginRight: 100, }}
-                >
-                    <div>
-                        <Grow in={open} timeout={1000}>
-                            <Card className={classes.modalCard}>
-                                <IconButton
-                                className={classes.iconButtonRight}
-                                onClick={() => {
-                                openCloseModal();
-                                }}
-                                >
-                                    <CloseIcon />
-                                </IconButton>
-                                <div style={{ flexDirection: "row", display: "flex" }}>
-                                    <img style={{ height: 500 }} src={images[itemIndex].img} alt={images[itemIndex].title}></img>
-                                    <div style={{ flexDirection: "column", display: "flex", paddingRight: 40, paddingTop: 40, paddingLeft: 10 }}>
-                                        <p className={classes.imageTitle}>
-                                            {images[itemIndex].title}
-                                        </p>
-                                        <p className={classes.imageYear}>
-                                            <span style={{ fontWeight: 600 }}>
-                                                Year Completed:
-                                            </span> 
-                                            {' '}
-                                            {images[itemIndex].year}
-                                        </p>
-                                        <p className={classes.imageMaterials}>
-                                            <span style={{ fontWeight: 600 }}>
-                                                Materials: 
-                                            </span>
-                                            {' '}
-                                            {images[itemIndex].materials}
-                                        </p>
-                                        <p className={classes.imageDescription}>
-                                            <span style={{ fontWeight: 600 }}>
-                                                Description: 
-                                            </span>
-                                            {' '}
-                                            {images[itemIndex].description}
-                                        </p>
-                                    </div>
-                                </div>
-                            </Card>
-                        </Grow>
-                    </div>
-                </Modal>
+            { !loading && (
+                <>
+                    <GridList spacing={10} cellHeight={300} cols={3} className={classes.artGrid}>
+                        {images.map((image) => (
+                            <Fade in={true} timeout={1500 + (images.indexOf(image) * 500)}>
+                                <GridListTile onClick={() => {
+                                    openCloseModal();
+                                    setItemIndex(images.indexOf(image))
+                                    }} className={classes.gridTile} key={image.id} cols={image.cols || 1}>
+                                    <img src={image.path} alt={image.title} />
+                                </GridListTile>
+                            </Fade>
+                        ))}
+                    </GridList>
+                        <Modal 
+                        open={open}
+                        onClose={openCloseModal}
+                        outline={0}
+                        style={{justifyContent: "center", display: "flex", alignItems: "center", outline: "none", 
+                        marginLeft: 100,
+                        marginRight: 100, }}
+                        >
+                            <div>
+                                <Grow in={open} timeout={1000}>
+                                    <Card className={classes.modalCard}>
+                                        <IconButton
+                                        className={classes.iconButtonRight}
+                                        onClick={() => {
+                                        openCloseModal();
+                                        }}
+                                        >
+                                            <CloseIcon />
+                                        </IconButton>
+                                        <div style={{ flexDirection: "row", display: "flex" }}>
+                                            <img style={{ height: 500 }} src={images[itemIndex].path} alt={images[itemIndex].title}></img>
+                                            <div style={{ flexDirection: "column", display: "flex", paddingRight: 40, paddingTop: 40, paddingLeft: 10 }}>
+                                                <p className={classes.imageTitle}>
+                                                    {images[itemIndex].title}
+                                                </p>
+                                                <p className={classes.imageYear}>
+                                                    <span style={{ fontWeight: 600 }}>
+                                                        Year Completed:
+                                                    </span> 
+                                                    {' '}
+                                                    {images[itemIndex].year}
+                                                </p>
+                                                <p className={classes.imageMaterials}>
+                                                    <span style={{ fontWeight: 600 }}>
+                                                        Materials: 
+                                                    </span>
+                                                    {' '}
+                                                    {images[itemIndex].materials}
+                                                </p>
+                                                <p className={classes.imageDescription}>
+                                                    <span style={{ fontWeight: 600 }}>
+                                                        Description: 
+                                                    </span>
+                                                    {' '}
+                                                    {images[itemIndex].description}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </Card>
+                                </Grow>
+                            </div>
+                        </Modal>
+                </>
+                )}
                 <Footer/>
         </>
     )
