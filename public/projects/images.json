@@ -3,7 +3,7 @@
         {
             "type": "illustration",
             "id": 1,
-            "path": "/images/profile.jpg",
+            "path": "/images/abstractExperiment.jpg",
             "title": "An Exercise in Chaos",
             "year": "2015",
             "description": "My first and last foray into abstract two-dimensional, it gave me a panic attack.",
@@ -20,7 +20,7 @@
         {
             "type": "illustration",
             "id": 2,
-            "path": "../src/assets/illustration/antarcticats.jpg",
+            "path": "/images/antarcticats.jpg",
             "title": "Tshirt Design for Antarcticats (ATL)",
             "year": "2017",
             "description": "An album design for Atlanta, GA, band, Antarcticats.",
@@ -42,7 +42,7 @@
         {
             "type": "illustration",
             "id": 3,
-            "path": "../src/assets/illustration/babyVeins.jpg",
+            "path": "/images/babyVeins.jpg",
             "title": "Don't be Vein",
             "year": "2015",
             "description": "Feel free to fill in the blank.",
@@ -61,7 +61,7 @@
         {
             "type": "illustration",
             "id": 4,
-            "path": "../src/assets/illustration/balletLeg.jpg",
+            "path": "/images/balletLeg.jpg",
             "title": "Load-Bearing",
             "year": "2015",
             "description": "The careful balance of bones.",
@@ -80,7 +80,7 @@
         {
             "type": "illustration",
             "id": 5,
-            "path": "../src/assets/illustration/balloonJeff.jpg",
+            "path": "/images/balloonJeff.jpg",
             "title": "Jeff Takes Off",
             "year": "2016",
             "description": "He wishes to leave this plane of existence",
@@ -98,7 +98,7 @@
         {
             "type": "illustration",
             "id": 6,
-            "path": "../src/assets/illustration/bandFlyer.jpg",
+            "path": "/images/bandFlyer.jpg",
             "title": "Flyer for concert at Black Forge Coffee House (PGH)",
             "year": "2017",
             "description": "Flyer for a local concert taking place at Black Forge Coffee House, Pittsburgh, PA.",
@@ -117,7 +117,7 @@
         {
             "type": "illustration",
             "id": 7,
-            "path": "../src/assets/illustration/bicycleFish.jpg",
+            "path": "/images/bicycleFish.jpg",
             "title": "A Jaunty Chap",
             "year": "2017",
             "description": "Design for a tattoo client, who requested a fish on a bicycle.",
@@ -137,7 +137,7 @@
         {
             "type": "illustration",
             "id": 8,
-            "path": "../src/assets/illustration/birth.jpg",
+            "path": "/images/birth.jpg",
             "title": "Conception Oven",
             "year": "2017",
             "description": "It's like Alien, except for you're biologically geared to love it; created for UAL: CCA Semester Show",
@@ -158,7 +158,7 @@
         {
             "type": "illustration",
             "id": 9,
-            "path": "../src/assets/illustration/brokenFingers.jpg",
+            "path": "/images/brokenFingers.jpg",
             "title": "Baby Carrots",
             "year": "2017",
             "description": "Ever hit your thumb with a hammer? Ever do it again? Created for UAL: CCA Semester Show.",
@@ -178,7 +178,7 @@
         {
             "type": "illustration",
             "id": 10,
-            "path": "../src/assets/illustration/butterflyNebula.jpg",
+            "path": "/images/butterflyNebula.jpg",
             "title": "Wings of Stars",
             "year": "2015",
             "description": "The Butterfly Nebula.",
@@ -196,7 +196,7 @@
         {
             "type": "illustration",
             "id": 11,
-            "path": "../src/assets/illustration/capsuleCorp.jpg",
+            "path": "/images/capsuleCorp.jpg",
             "title": "Album Cover for Capsule Corp (PGH)",
             "year": "2017",
             "description": "An album design for Pittsburgh, PA, band, Capsule Corp.",
@@ -213,7 +213,7 @@
         {
             "type": "illustration",
             "id": 12,
-            "path": "../src/assets/illustration/cockroach.jpg",
+            "path": "/images/cockroach.jpg",
             "title": "A Kafka-Esque Nightmare",
             "year": "2017",
             "description": "If you read Metamorphosis backwards, it's a heartwarming story of a family who's love of a cockroach turns him into a man.",
@@ -231,7 +231,7 @@
         {
             "type": "illustration",
             "id": 13,
-            "path": "../src/assets/illustration/comicSans.jpg",
+            "path": "/images/comicSans.jpg",
             "title": "Graphic Design is Important",
             "year": "2016",
             "description": "Don't abuse comic sans, it's a tool not the only tool.",
@@ -248,7 +248,7 @@
         {
             "type": "illustration",
             "id": 14,
-            "path": "../src/assets/illustration/cosmicRay.jpg",
+            "path": "/images/cosmicRay.jpg",
             "title": "A Cosmic Ray",
             "year": "2017",
             "description": "A comrade of the world turtle.",
@@ -266,7 +266,7 @@
         {
             "type": "illustration",
             "id": 15,
-            "path": "../src/assets/illustration/creationOfAdam.jpg",
+            "path": "/images/creationOfAdam.jpg",
             "title": "Creation of Ad-Helm",
             "year": "2015",
             "description": "A rendition of the Creation of Adam, done in the style of Stewart Helm.",
@@ -280,7 +280,7 @@
         {
             "type": "illustration",
             "id": 16,
-            "path": "../src/assets/illustration/dislocated.jpg",
+            "path": "/images/dislocated.jpg",
             "title": "Out of Place",
             "year": "2016",
             "description": "Hold your breath, you'll feel a pop.",
@@ -298,7 +298,7 @@
         {
             "type": "illustration",
             "id": 17,
-            "path": "../src/assets/illustration/distantFutures.jpg",
+            "path": "/images/distantFutures.jpg",
             "title": "Tshirt Design for Distant Futures (PGH)",
             "year": "2017",
             "description": "A Tshirt design for Pittsburgh, PA, band, Distant Futures.",
@@ -313,7 +313,7 @@
         {
             "type": "illustration",
             "id": 18,
-            "path": "../src/assets/illustration/drinkingJeff.jpg",
+            "path": "/images/drinkingJeff.jpg",
             "title": "Bottoms Up",
             "year": "2016",
             "description": "Jeff unwinds for the evening.",
@@ -331,7 +331,7 @@
         {
             "type": "illustration",
             "id": 19,
-            "path": "../src/assets/illustration/eyesOpen.jpg",
+            "path": "/images/eyesOpen.jpg",
             "title": "Can't Look Away",
             "year": "2017",
             "description": "It's like watching a trainwreck; Created for UAL: CCA Semester Show.",
@@ -349,7 +349,7 @@
         {
             "type": "illustration",
             "id": 20,
-            "path": "../src/assets/illustration/finalsJeff.jpg",
+            "path": "/images/finalsJeff.jpg",
             "title": "Jeff does his Taxes",
             "year": "2016",
             "description": "Jeff is just like you and me, he dreads April.",
@@ -358,7 +358,7 @@
         {
             "type": "illustration",
             "id": 21,
-            "path": "../src/assets/illustration/flyingJeff.jpg",
+            "path": "/images/flyingJeff.jpg",
             "title": "Jeff Takes a Leap of Faith",
             "year": "2016",
             "description": "Without clothes, Jeff flies more freely.",
@@ -367,7 +367,7 @@
         {
             "type": "illustration",
             "id": 22,
-            "path": "../src/assets/illustration/fullOfShit.jpg",
+            "path": "/images/fullOfShit.jpg",
             "title": "Full of Shit",
             "year": "2016",
             "description": "You are what you eat.",
@@ -376,7 +376,7 @@
         {
             "type": "illustration",
             "id": 23,
-            "path": "../src/assets/illustration/gasMask.jpg",
+            "path": "/images/gasMask.jpg",
             "title": "Flowery Scent",
             "year": "2016",
             "description": "It's just too darn fresh.",
@@ -385,7 +385,7 @@
         {
             "type": "illustration",
             "id": 24,
-            "path": "../src/assets/illustration/goldenCactus.jpg",
+            "path": "/images/goldenCactus.jpg",
             "title": "The Golden Root-io",
             "year": "2017",
             "description": "If it fits, it sits.",
@@ -394,7 +394,7 @@
         {
             "type": "illustration",
             "id": 25,
-            "path": "../src/assets/illustration/hairyLegs.jpg",
+            "path": "/images/hairyLegs.jpg",
             "title": "Sexture",
             "year": "2017",
             "description": "Hey girl, those legs go all the way up?",
@@ -403,7 +403,7 @@
         {
             "type": "illustration",
             "id": 26,
-            "path": "../src/assets/illustration/headClouds.jpg",
+            "path": "/images/headClouds.jpg",
             "title": "Thought Bubbles",
             "year": "2017",
             "description": "So many thoughts for such a little head; created for UAL: CCA Semester Show.",
@@ -412,7 +412,7 @@
         {
             "type": "illustration",
             "id": 27,
-            "path": "../src/assets/illustration/headShot.jpg",
+            "path": "/images/headShot.jpg",
             "title": "Before it Gets Worse",
             "year": "2017",
             "description": "Quick reactions save lives; created for UAL: CCA Semester Show.",
@@ -421,7 +421,7 @@
         {
             "type": "illustration",
             "id": 28,
-            "path": "../src/assets/illustration/headTubes.jpg",
+            "path": "/images/headTubes.jpg",
             "title": "Jacked In",
             "year": "2017",
             "description": "Now who's in the Matrix?",
@@ -430,7 +430,7 @@
         {
             "type": "illustration",
             "id": 29,
-            "path": "../src/assets/illustration/headTumor.jpg",
+            "path": "/images/headTumor.jpg",
             "title": "Of a Melon",
             "year": "2017",
             "description": "Some tumors grow teeth, did you know that? Created for UAL: CCA Semester Show.",
@@ -439,7 +439,7 @@
         {
             "type": "illustration",
             "id": 30,
-            "path": "../src/assets/illustration/hummingbird.jpg",
+            "path": "/images/hummingbird.jpg",
             "title": "Bird Bones",
             "year": "2015",
             "description": "They may as well be toothpicks.",
@@ -448,7 +448,7 @@
         {
             "type": "illustration",
             "id": 31,
-            "path": "../src/assets/illustration/lamprey.jpg",
+            "path": "/images/lamprey.jpg",
             "title": "Wow Ze Dong",
             "year": "2015",
             "description": "Part of the Dick-tators series, inserting unique animals into classic propaganda posters.",
@@ -457,7 +457,7 @@
         {
             "type": "illustration",
             "id": 32,
-            "path": "../src/assets/illustration/liteweight.jpg",
+            "path": "/images/liteweight.jpg",
             "title": "Album Cover for Liteweight (PGH)",
             "year": "2017",
             "description": "An album design for Pittsburgh, PA, band, Liteweight.",
@@ -466,7 +466,7 @@
         {
             "type": "illustration",
             "id": 33,
-            "path": "../src/assets/illustration/longFingers.jpg",
+            "path": "/images/longFingers.jpg",
             "title": "Delicate Touch",
             "year": "2017",
             "description": "How it feels to have acrylic nails; created for UAL: CCA Semester Show.",
@@ -475,7 +475,7 @@
         {
             "type": "illustration",
             "id": 34,
-            "path": "../src/assets/illustration/lunarcy.JPG",
+            "path": "/images/lunarcy.JPG",
             "title": "Sheer Lunarcy",
             "year": "2015",
             "description": "Self portrait in front of the Eridanus Super Void.",
@@ -484,7 +484,7 @@
         {
             "type": "illustration",
             "id": 35,
-            "path": "../src/assets/illustration/manyLeggedDog.jpg",
+            "path": "/images/manyLeggedDog.jpg",
             "title": "In Case One Falls Off",
             "year": "2016",
             "description": "I had a fear as a child my pets would lose limbs. So I gave him some extra, just in case.",
@@ -493,7 +493,7 @@
         {
             "type": "illustration",
             "id": 36,
-            "path": "../src/assets/illustration/mcEscher.jpg",
+            "path": "/images/mcEscher.jpg",
             "title": "Circular Progress",
             "year": "2016",
             "description": "This hand helps this hand, helps this hand, helps this hand....",
@@ -502,7 +502,7 @@
         {
             "type": "illustration",
             "id": 37,
-            "path": "../src/assets/illustration/meltingEyeballs.jpg",
+            "path": "/images/meltingEyeballs.jpg",
             "title": "It's a Bit Warm",
             "year": "2017",
             "description": "These aren't tears; created for UAL: CCA Semester Show.",
@@ -511,7 +511,7 @@
         {
             "type": "illustration",
             "id": 38,
-            "path": "../src/assets/illustration/mermaid.jpg",
+            "path": "/images/mermaid.jpg",
             "title": "Mermaids were Always Manatees",
             "year": "2017",
             "description": "Mermaids don't own razors. Or chapstick; created for UAL: CCA Semester Show.",
@@ -520,7 +520,7 @@
         {
             "type": "illustration",
             "id": 39,
-            "path": "../src/assets/illustration/mlady.jpg",
+            "path": "/images/mlady.jpg",
             "title": "M'Lady",
             "year": "2016",
             "description": "And a tip of the hat to you, sir.",
@@ -529,7 +529,7 @@
         {
             "type": "illustration",
             "id": 40,
-            "path": "../src/assets/illustration/mole.jpg",
+            "path": "/images/mole.jpg",
             "title": "Kim Jong Fun",
             "year": "2015",
             "description": "Part of the Dick-tators series, inserting unique animals into classic propaganda posters.",
@@ -538,7 +538,7 @@
         {
             "type": "illustration",
             "id": 41,
-            "path": "../src/assets/illustration/morelMan.jpg",
+            "path": "/images/morelMan.jpg",
             "title": "Morel and Upstanding Member of Society",
             "year": "2017",
             "description": "He thrives in the moist corpse of capitalism",
@@ -547,7 +547,7 @@
         {
             "type": "illustration",
             "id": 42,
-            "path": "../src/assets/illustration/nishikie.jpg",
+            "path": "/images/nishikie.jpg",
             "title": "O(ak)verly Complex",
             "year": "2017",
             "description": "More details? Yes, let's.",
@@ -556,7 +556,7 @@
         {
             "type": "illustration",
             "id": 43,
-            "path": "../src/assets/illustration/openVeins.jpg",
+            "path": "/images/openVeins.jpg",
             "title": "Bloodletting",
             "year": "2017",
             "description": "Let the evil drain out; created for UAL: CCA Semester Show.",
@@ -565,7 +565,7 @@
         {
             "type": "illustration",
             "id": 44,
-            "path": "../src/assets/illustration/pezMan.jpg",
+            "path": "/images/pezMan.jpg",
             "title": "Eating Chalk",
             "year": "2017",
             "description": "Kch-CHUNK.",
@@ -574,7 +574,7 @@
         {
             "type": "illustration",
             "id": 45,
-            "path": "../src/assets/illustration/pickingUp.jpg",
+            "path": "/images/pickingUp.jpg",
             "title": "70s Carpeting",
             "year": "2017",
             "description": "Shag carpet is far too sensory; created for UAL: CCA Semester Show.",
@@ -583,7 +583,7 @@
         {
             "type": "illustration",
             "id": 46,
-            "path": "../src/assets/illustration/pillarsOfCreation.jpg",
+            "path": "/images/pillarsOfCreation.jpg",
             "title": "The Pillars",
             "year": "2016",
             "description": "The Pillars of Creation.",
@@ -592,7 +592,7 @@
         {
             "type": "illustration",
             "id": 47,
-            "path": "../src/assets/illustration/poundingHeart.jpg",
+            "path": "/images/poundingHeart.jpg",
             "title": "Palps",
             "year": "2017",
             "description": "'We need to talk'; created for UAL: CCA Semester Show.",
@@ -601,7 +601,7 @@
         {
             "type": "illustration",
             "id": 48,
-            "path": "../src/assets/illustration/protoren.jpg",
+            "path": "/images/protoren.jpg",
             "title": "All the King's Men",
             "year": "2016",
             "description": "A protorenaissance take on a classic tale.",
@@ -610,7 +610,7 @@
         {
             "type": "illustration",
             "id": 49,
-            "path": "../src/assets/illustration/sasquatch.jpg",
+            "path": "/images/sasquatch.jpg",
             "title": "Lost in the Sauce",
             "year": "2017",
             "description": "Sas ate some bad mushrooms. Design for a tattoo client, who requested a sasquatch.",
@@ -619,7 +619,7 @@
         {
             "type": "illustration",
             "id": 50,
-            "path": "../src/assets/illustration/separateHands.jpg",
+            "path": "/images/separateHands.jpg",
             "title": "Some Assembly Required",
             "year": "2017",
             "description": "I was born with incredibly loose joints, but cracking them does feel amazing; created for UAL: CCA Semester Show.",
@@ -628,7 +628,7 @@
         {
             "type": "illustration",
             "id": 51,
-            "path": "../src/assets/illustration/skeletonCuddle.jpg",
+            "path": "/images/skeletonCuddle.jpg",
             "title": "Comfort from Within",
             "year": "2017",
             "description": "What's inside you can never leave; created for UAL: CCA Semester Show.",
@@ -637,7 +637,7 @@
         {
             "type": "illustration",
             "id": 52,
-            "path": "../src/assets/illustration/softBaby.jpg",
+            "path": "/images/softBaby.jpg",
             "title": "Soft in the Head",
             "year": "2017",
             "description": "Never drop a baby, their skulls aren't real yet; created for UAL: CCA Semester Show.",
@@ -646,7 +646,7 @@
         {
             "type": "illustration",
             "id": 53,
-            "path": "../src/assets/illustration/spaceJeff.jpg",
+            "path": "/images/spaceJeff.jpg",
             "title": "No Sound in Space, Jeff",
             "year": "2016",
             "description": "Our first encounter with Quiet Man Jeff, an origin story.",
@@ -655,7 +655,7 @@
         {
             "type": "illustration",
             "id": 54,
-            "path": "../src/assets/illustration/teethFalling.jpg",
+            "path": "/images/teethFalling.jpg",
             "title": "No Dental Coverage",
             "year": "2017",
             "description": "Don't forget to brush; created for UAL: CCA Semester Show.",
@@ -664,7 +664,7 @@
         {
             "type": "illustration",
             "id": 55,
-            "path": "../src/assets/illustration/tiedUp.jpg",
+            "path": "/images/tiedUp.jpg",
             "title": "I'm so Knotty",
             "year": "2017",
             "description": "First world choice paralysis. Or sleep paralysis. Some sort of paralysis; created for UAL: CCA Semester Show",
@@ -673,7 +673,7 @@
         {
             "type": "illustration",
             "id": 56,
-            "path": "../src/assets/illustration/treeNightmare.jpg",
+            "path": "/images/treeNightmare.jpg",
             "title": "Fear of Heights",
             "year": "2017",
             "description": "I could never just let go; created for UAL: CCA Semester Show.",
@@ -682,7 +682,7 @@
         {
             "type": "illustration",
             "id": 57,
-            "path": "../src/assets/illustration/wall.jpg",
+            "path": "/images/wall.jpg",
             "title": "Tripped and Fell",
             "year": "2016",
             "description": "View of a wall while on LSD and lying on the sidewalk.",
@@ -691,7 +691,7 @@
         {
             "type": "illustration",
             "id": 58,
-            "path": "../src/assets/illustration/waterTrash.png",
+            "path": "/images/waterTrash.png",
             "title": "Album cover for Watertrash (PGH)",
             "year": "2018",
             "description": "An album design for Pittsburgh, PA, band, Water Trash.",
@@ -700,7 +700,7 @@
         {
             "type": "illustration",
             "id": 59,
-            "path": "../src/assets/illustration/jimmyMayo.jpg",
+            "path": "/images/jimmyMayo.jpg",
             "title": "Album cover for Jimmy Mayo (PGH)",
             "year": "2018",
             "description": "An album design for Pittsburgh, PA, band, Jimmy Mayo.",
@@ -709,7 +709,7 @@
         {
             "type": "illustration",
             "id": 60,
-            "path": "../src/assets/illustration/screechOwl.png",
+            "path": "/images/screechOwl.png",
             "title": "Screech Owl",
             "year": "2018",
             "description": "A far more efficient owl than nature could produce; created for The Treachery of Birds, by Josh Brown.",
@@ -718,7 +718,7 @@
         {
             "type": "illustration",
             "id": 61,
-            "path": "../src/assets/illustration/kingfisher.png",
+            "path": "/images/kingfisher.png",
             "title": "Kingfisher",
             "year": "2018",
             "description": "A true descendant of dinosaurs; created for The Treachery of Birds, by Josh Brown.",
@@ -727,7 +727,7 @@
         {
             "type": "illustration",
             "id": 62,
-            "path": "../src/assets/illustration/swallow.png",
+            "path": "/images/swallow.png",
             "title": "Swallow",
             "year": "2018",
             "description": "Neck pouches are so sexy; created for The Treachery of Birds, by Josh Brown.",
