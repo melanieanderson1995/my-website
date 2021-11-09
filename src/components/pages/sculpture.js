@@ -115,20 +115,20 @@ export default function Sculpture () {
         console.log("SORTING", sortOption);
         switch(event.target.value) {
             case "title":
-                setImages(sculptureImages.sort((a, b) => {
+                setImages(images.sort((a, b) => {
                 if (a.title > b.title) return 1;
                 if (a.title < b.title) return -1;
                 return 0;
                 }))
                 break;
             case "yearAsc":
-                setImages(sculptureImages.sort((a, b) => a.year - b.year))
+                setImages(images.sort((a, b) => a.year - b.year))
                 break;
             case "yearDesc":
-                setImages(sculptureImages.sort((a, b) => b.year - a.year))
+                setImages(images.sort((a, b) => b.year - a.year))
                 break;
             default:
-                setImages(sculptureImages);
+                setImages(images);
         }
       };
 
