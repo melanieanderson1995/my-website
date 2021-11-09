@@ -25,7 +25,7 @@ collections:
             widget: image
             fields: 
               - {label: "type", name: "type", widget: "string"}
-              - {label: "image", name: "image", widget: "image", default: "../images/profile.jpg"}
+              - {label: "path", name: "path", widget: "image"}
               - {label: "id", name: "id", widget: "number"}
               - {label: "title", name: "title", widget: "string"}
               - {label: "year", name: "year", widget: "string"}
