@@ -22,9 +22,10 @@ collections:
         fields:
           - name: images
             label: The Name of the List
-            widget: list
+            widget: image
             fields: 
               - {label: "type", name: "type", widget: "string"}
+              - {label: "image", name: "image", widget: "image", default: "../images/profile.jpg"}
               - {label: "id", name: "id", widget: "number"}
               - {label: "title", name: "title", widget: "string"}
               - {label: "year", name: "year", widget: "string"}
