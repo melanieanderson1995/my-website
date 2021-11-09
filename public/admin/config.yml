@@ -20,8 +20,8 @@ collections:
         name: "images"
         file: "/public/projects/images.json"
         fields:
-          - name: images
-            label: The Name of the List
+          - name: imagesJson
+            label: JSON of Images
             widget: list
             fields: 
               - {label: "type", name: "type", widget: "string"}
