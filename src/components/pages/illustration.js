@@ -6,9 +6,6 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import CloseIcon from "@material-ui/icons/Close";
 import Footer from '../footer';
-import abstractExperiment from '../../assets/illustration/abstractExperiment.jpg'
-import imageJson from '../../assets/images/images.json'
-import { typeOf } from 'react-is';
 
 const useStyles = makeStyles((theme) => ({
     artGrid: {
