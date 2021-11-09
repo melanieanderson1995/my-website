@@ -3,7 +3,7 @@
         {
             "type": "illustration",
             "id": 1,
-            "path": "/src/assets/illustration/abstractExperiment.jpg",
+            "path": "/public/images/profile.jpg",
             "title": "An Exercise in Chaos",
             "year": "2015",
             "description": "My first and last foray into abstract two-dimensional, it gave me a panic attack.",

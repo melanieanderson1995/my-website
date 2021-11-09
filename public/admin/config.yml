@@ -19,11 +19,14 @@ collections:
       - label: "Images"
         name: "images"
         file: "/public/projects/images.json"
-        fields: # The fields for each document, usually in front matter
-          - {label: "type", name: "type", widget: "string"}
-          - {label: "id", name: "id", widget: "number"}
-          - {label: "title", name: "title", widget: "string"}
-          - {label: "year", name: "year", widget: "string"}
-          - {label: "description", name: "description", widget: "string"}
-          - {label: "materials", name: "materials", widget: "string"}
-    
+        fields:
+          - name: images
+            label: The Name of the List
+            widget: list
+            fields: 
+              - {label: "type", name: "type", widget: "string"}
+              - {label: "id", name: "id", widget: "number"}
+              - {label: "title", name: "title", widget: "string"}
+              - {label: "year", name: "year", widget: "string"}
+              - {label: "description", name: "description", widget: "string"}
+              - {label: "materials", name: "materials", widget: "string"}   

@@ -6,6 +6,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import CloseIcon from "@material-ui/icons/Close";
 import Footer from '../footer';
+import abstractExperiment from '../../assets/illustration/abstractExperiment.jpg'
 import imageJson from '../../assets/images/images.json'
 
 const useStyles = makeStyles((theme) => ({
@@ -148,16 +149,18 @@ console.log("IMAGES", images[0].path)
                 </div>
             </FormControl>
             <GridList spacing={10} cellHeight={300} cols={3} className={classes.artGrid}>
-                {images.map((image) => (
+                {images.map((image) => {
+                    return (
                     <Fade in={true} timeout={1500 + (images.indexOf(image) * 500)}>
                         <GridListTile onClick={() => {
                             openCloseModal();
                             setItemIndex(images.indexOf(image))
                             }} className={classes.gridTile} key={image.id} cols={image.cols || 1}>
-                            <img src={image.path} alt={image.title} />
+                            <img src={image.data} alt={image.title} />
                         </GridListTile>
                      </Fade>
-                ))}
+                    )
+                })}
             </GridList>
                 <Modal 
                 open={open}
