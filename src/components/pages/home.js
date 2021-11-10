@@ -8,9 +8,9 @@ function Item(props)
 {
     return (
         <Paper style={{ backgroundColor: "black", height: 500, padding: 20, justifyContent: "center", alignItems: "center"}}>
-        <div style={{justifyContent: "center", alignItems: 'center'}}>
-        <img style={{ height: 500, justifyContent: 'center', alignItems: 'center' }} src={props.item.path} alt={props.item.description} />
-        </div>
+            <div style={{justifyContent: "center", alignItems: 'center', display: 'flex'}}>
+                <img style={{ height: 500, justifyContent: 'center', alignItems: 'center' }} src={props.item.path} alt={props.item.description} />
+            </div>
         </Paper>
  )
 }
@@ -43,17 +43,19 @@ export default function Home () {
 
     return (
         <Paper style={{ justifyContent: 'center', alignItems: 'center', backgroundColor: "black"}}>
-            { !loading && (
-                <Carousel 
-                indicatorIconButtonProps={{ style: {padding: '10px', color: '#3c3c3c'} }} 
-                activeIndicatorIconButtonProps={{ style: {color: "#f5f5f5"} }}
-                style={{ height: 500, backgroundColor: 'red', alignItems: 'center', justifyContent: 'center' }}
-                >
-                    {
-                        images.sort(() => .5 - Math.random()).slice(0,5).map((item, i) => <Item key={i} item={item} style={{ alignItems: 'center', justifyContent: 'center'}} /> )
-                    }
-                </Carousel>
-            )}
+            <div>
+                { !loading && (
+                    <Carousel 
+                    indicatorIconButtonProps={{ style: {padding: '10px', color: '#3c3c3c'} }} 
+                    activeIndicatorIconButtonProps={{ style: {color: "#f5f5f5"} }}
+                    style={{ backgroundColor: 'red', margin: 'auto', background: 'red' }}
+                    >
+                        {
+                            images.sort(() => .5 - Math.random()).slice(0,5).map((item, i) => <Item key={i} item={item} style={{ alignItems: 'center', justifyContent: 'center'}} /> )
+                        }
+                    </Carousel>
+                )}
+            </div>
             <Footer/>
         </Paper>
     )
