@@ -42,7 +42,7 @@ export default function Home () {
 
 
     return (
-        <div style={{ justifyContent: 'center', alignItems: 'center'}}>
+        <Paper style={{ justifyContent: 'center', alignItems: 'center', backgroundColor: "black"}}>
             { !loading && (
                 <Carousel 
                 indicatorIconButtonProps={{ style: {padding: '10px', color: '#3c3c3c'} }} 
@@ -55,6 +55,6 @@ export default function Home () {
                 </Carousel>
             )}
             <Footer/>
-        </div>
+        </Paper>
     )
 }
