@@ -9,7 +9,9 @@ function Item(props)
     return (
         <Paper style={{ backgroundColor: "black", height: 500, padding: 20, justifyContent: "center", alignItems: "center"}}>
             <div style={{justifyContent: "center", alignItems: 'center', display: 'flex'}}>
-                <img style={{ height: 500, justifyContent: 'center', alignItems: 'center' }} src={props.item.path} alt={props.item.description} />
+                <a href={props.item.type === 'sculpture' ? "/sculpture" : props.item.type === 'illustration' ? "/illustration" : "/tattoo"} >
+                    <img style={{ height: 500, justifyContent: 'center', alignItems: 'center' }} src={props.item.path} alt={props.item.description} />
+                </a>
             </div>
         </Paper>
  )
