@@ -1,0 +1,44 @@
+{
+    "events": [
+        {
+            "name": "International Baccalaureate Americas Art Show",
+            "date": {
+                "month": "May",
+                "year": "2014"
+            },
+            "location": "USA",
+            "description": "End of school year show celebrating international baccalaureate visual arts student. One piece from my portfolio was selected by my teacher (Matthew Ravenstahl) and submitted and shown. Image credit to International Baccalaureate.",
+            "image": "/images/ib.png"
+        },
+        {
+            "name": "Youth Invasion 2015: Exploding Plastic Inevitable",
+            "date": {
+                "month": "May",
+                "year": "2015"
+            },
+            "location": "Andy Warhol Museum, Pittsburgh, PA",
+            "description": "Created an animation with a classmate (Madeline Quasebarth) that was projected on the wall behind a fashion show by students at Pittsburgh Creative and Performing Arts school. Our prompts were deer overpopulation, mushrooms and fungi, and the NBA. Image credit to the Andy Warhol Museum.",
+            "image": "/images/capa.png"
+        },
+        {
+            "name": "Digitization of Platygastroidea in the National Museum of Natural History: 'Harnessing the Intern Apocalypse'",
+            "date": {
+                "month": "Nov",
+                "year": "2016"
+            },
+            "location": "Entomological Collections Network annual meeting",
+            "description": "Images taken using a composite microscope and a scanning electron machine of Platygastroidea, images for show selected by manager. Image credit to Elijah Talamas.",
+            "image": "/images/platy.png"
+        },
+        {
+            "name": "Proterosceliopsidae: A new family of Platygastroidea from Cretaceous Amber",
+            "date": {
+                "month": "Nov",
+                "year": "2019"
+            },
+            "location": "Journal of Hymenoptera Research",
+            "description": "My images were featured in this article about Platygastroidea, authored by Elijah Talamas, Norman Johnson, Chungkun Shih, and Dong Ren. Image credit to Elijah Talamas.",
+            "image": "/images/platy2.png"
+        }
+    ]
+}    
