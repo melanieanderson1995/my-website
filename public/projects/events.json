@@ -31,6 +31,16 @@
             "image": "/images/platy.png"
         },
         {
+            "name": "Open Studio",
+            "date": {
+                "month": "December",
+                "year": "2019"
+            },
+            "location": "University of the Arts London: Central St. Martins, London, UK",
+            "description": "Open studio for University of the Arts London Masters of Arts and Sciences program. Piece submitted was a sculpture, 'My Fourth Dimensional Friend'.",
+            "image": "/images/ual.png"
+        },
+        {
             "name": "Proterosceliopsidae: A new family of Platygastroidea from Cretaceous Amber",
             "date": {
                 "month": "November",

@@ -46,7 +46,7 @@ useEffect(() => {
       })
       .then(response => {
         console.log("MY JSON", response)
-        setEvents(response.events);
+        setEvents(response.events.sort((a, b) => a.date.year > b.date.year ? -1 : 1));
         setLoading(false);
       })
     }, [])
