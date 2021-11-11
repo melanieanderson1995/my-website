@@ -23,7 +23,7 @@
         {
             "name": "Digitization of Platygastroidea in the National Museum of Natural History: 'Harnessing the Intern Apocalypse'",
             "date": {
-                "month": "Nov",
+                "month": "November",
                 "year": "2016"
             },
             "location": "Entomological Collections Network annual meeting",
@@ -33,12 +33,52 @@
         {
             "name": "Proterosceliopsidae: A new family of Platygastroidea from Cretaceous Amber",
             "date": {
-                "month": "Nov",
+                "month": "November",
                 "year": "2019"
             },
             "location": "Journal of Hymenoptera Research",
             "description": "My images were featured in this article about Platygastroidea, authored by Elijah Talamas, Norman Johnson, Chungkun Shih, and Dong Ren. Image credit to Elijah Talamas.",
             "image": "/images/platy2.png"
+        },
+        {
+            "name": "Which Way? That Way",
+            "date": {
+                "month": "December",
+                "year": "2017"
+            },
+            "location": "University of the Arts: Chelsea College of Arts, London, UK",
+            "description": "Second year exhibition with UAL CCA, completed during my semester abroad at UAL. Piece submitted was an installation work, 'Balloon Wall'.",
+            "image": "/images/wwtw.jpeg"
+        },
+        {
+            "name": "Dot Gov",
+            "date": {
+                "month": "May",
+                "year": "2018"
+            },
+            "location": "Miller Gallery, Carnegie Mellon University, Pittsburgh, PA",
+            "description": "Senior exhibition for the CMU School of Art. Piece submitted was an illustration suspended off the wall (can't find image).",
+            "image": "/images/dotgov.jpeg"
+        },
+        {
+            "name": "EmbryonicA",
+            "date": {
+                "month": "December",
+                "year": "2018"
+            },
+            "location": "University of the Arts London: Central St. Martins, London, UK",
+            "description": "Open studio for University of the Arts London Masters of Arts and Sciences program. Piece submitted was an installation, 'Fabric of the Cosmos'.",
+            "image": "/images/embryonica.jpeg"
+        },
+        {
+            "name": "We are Here we are",
+            "date": {
+                "month": "March",
+                "year": "2019"
+            },
+            "location": "Apiary Studios, London, UK",
+            "description": "Interim art show for University of the Arts London Masters of Arts and Sciences program. Piece submitted was an installation, 'About a Yard'.",
+            "image": "/images/wahwa.jpeg"
         }
     ]
 }    

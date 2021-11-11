@@ -877,5 +877,32 @@
             "description": "'I declare this to be the outside.'",
             "materials": "Metal, paper"
         }
+        {
+            "type": "sculpture",
+            "id": 79,
+            "path": "/images/stringTheory1.JPG",
+            "title": "The Fabric of the Cosmos (1)",
+            "year": "2018",
+            "description": "A visual representation of the layers of strings that make up our cosmos. If viewed from the front, the piece looked dense and complex, but walking alongside of it the viewer can see each individual loop connected to the other loops.",
+            "materials": "Knitting needles, cable ties, fishing line"
+        },
+        {
+            "type": "sculpture",
+            "id": 80,
+            "path": "/images/stringTheory2.JPG",
+            "title": "The Fabric of the Cosmos (2)",
+            "year": "2018",
+            "description": "A visual representation of the layers of strings that make up our cosmos. If viewed from the front, the piece looked dense and complex, but walking alongside of it the viewer can see each individual loop connected to the other loops.",
+            "materials": "Knitting needles, cable ties, fishing line"
+        },
+        {
+            "type": "sculpture",
+            "id": 81,
+            "path": "/images/stringTheory3.JPG",
+            "title": "The Fabric of the Cosmos (3)",
+            "year": "2018",
+            "description": "A visual representation of the layers of strings that make up our cosmos. If viewed from the front, the piece looked dense and complex, but walking alongside of it the viewer can see each individual loop connected to the other loops.",
+            "materials": "Knitting needles, cable ties, fishing line"
+        },
     ]
 }
