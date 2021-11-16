@@ -46,7 +46,7 @@ useEffect(() => {
       })
       .then(response => {
         console.log("MY JSON", response)
-        setEvents(response.events.sort((a, b) => a.date.year > b.date.year ? -1 : 1));
+        setEvents(response.events.sort((a, b) => a.date > b.date ? -1 : 1));
         setLoading(false);
       })
     }, [])
@@ -59,7 +59,11 @@ useEffect(() => {
             <div style={{ padding: 20 }}>
                 { !loading && (
                     <div>
-                        {events.map((event) => (
+                        {events.map((event) => {
+                            const date = new Date(event.date);
+                            const year = date.getFullYear();
+                            const month = date.toLocaleString('default', {month: 'long'});
+                            return (
                             <div style={{ padding: 20, flexDirection: 'row', display: 'flex'}}>
                                 <img src={event.image} style={{ width: 150}} alt="event"/>
                                 <div style={{ paddingLeft: 20 }}>
@@ -68,7 +72,7 @@ useEffect(() => {
                                     </div>
                                     <div style={{ display: 'flex', flexDirection: 'row'}}>
                                         <div className={classes.eventInfo}>
-                                            {event.date.month}, {event.date.year}
+                                            {month}, {year}
                                         </div>
                                         <div className={classes.eventInfo} style={{ paddingLeft: 40 }}>
                                             {event.location}
@@ -79,7 +83,7 @@ useEffect(() => {
                                     </div>
                                 </div>
                             </div>
-                        ))}
+                        )})}
                     </div>
                 )}
             </div>

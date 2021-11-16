@@ -876,7 +876,7 @@
             "year": "2014",
             "description": "'I declare this to be the outside.'",
             "materials": "Metal, paper"
-        }
+        },
         {
             "type": "sculpture",
             "id": 79,
@@ -903,6 +903,6 @@
             "year": "2018",
             "description": "A visual representation of the layers of strings that make up our cosmos. If viewed from the front, the piece looked dense and complex, but walking alongside of it the viewer can see each individual loop connected to the other loops.",
             "materials": "Knitting needles, cable ties, fishing line"
-        },
+        }
     ]
 }
