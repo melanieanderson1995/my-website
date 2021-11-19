@@ -174,7 +174,7 @@ export default function Tattoo () {
                                 openCloseModal();
                                 setItemIndex(images.indexOf(image))
                                 }} className={classes.gridTile} key={image.img} cols={image.cols || 1}>
-                                <img src={image.img} alt={image.title} />
+                                <img src={image.path} alt={image.title} />
                             </GridListTile>
                         </Fade>
                     ))}
