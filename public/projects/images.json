@@ -869,15 +869,6 @@
             "materials": "Metal, paper"
         },
         {
-            "type": "tattoo",
-            "id": 78,
-            "path": "/images/mathJoke4.JPG",
-            "title": "The Engineer, the Physicist, and the Mathematician (4)",
-            "year": "2014",
-            "description": "'I declare this to be the outside.'",
-            "materials": "Metal, paper"
-        },
-        {
             "type": "sculpture",
             "id": 79,
             "path": "/images/stringTheory1.JPG",
@@ -1028,15 +1019,6 @@
             "title": "Bonehead",
             "year": "2018",
             "description": "Custom tattoo for Maddi.",
-            "materials": "Ink"
-        },
-        {
-            "type": "tattoo",
-            "id": 96,
-            "path": "/images/sharkhead.png",
-            "title": "A Winning Combination",
-            "year": "2019",
-            "description": "Custom tattoo for @sirceiriog.",
             "materials": "Ink"
         },
         {
