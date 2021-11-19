@@ -903,6 +903,528 @@
             "year": "2018",
             "description": "A visual representation of the layers of strings that make up our cosmos. If viewed from the front, the piece looked dense and complex, but walking alongside of it the viewer can see each individual loop connected to the other loops.",
             "materials": "Knitting needles, cable ties, fishing line"
+        },
+        {
+            "type": "tattoo",
+            "id": 82,
+            "path": "/images/yummy.png",
+            "title": "Yummy",
+            "year": "2019",
+            "description": "Custom tattoo for self.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 83,
+            "path": "/images/yrgas.png",
+            "title": "Dinosaurs Died for your Gas",
+            "year": "2018",
+            "description": "Tattoo for Sam, based off of mural.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 84,
+            "path": "/images/venus.png",
+            "title": "Maneater",
+            "year": "2018",
+            "description": "Custom tattoo for self.",
+            "materials": "Ink"
+        },
+        {
+            "type": "traditional",
+            "id": 85,
+            "path": "/images/venus.png",
+            "title": "Classic",
+            "year": "2019",
+            "description": "Custom tattoo for anonymous.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 86,
+            "path": "/images/tomato.png",
+            "title": "Tomato Tomato",
+            "year": "2018",
+            "description": "Custom tattoo for Alex.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 87,
+            "path": "/images/sun.png",
+            "title": "Sun of Mine",
+            "year": "2018",
+            "description": "Custom tattoo for Britney, based off of her mother's tattoo.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 88,
+            "path": "/images/speechbubbles.png",
+            "title": "New Yorker Tattoo",
+            "year": "2018",
+            "description": "Tattoo for Audrey, based off of New Yorker cover.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 89,
+            "path": "/images/snail.png",
+            "title": "Slowly does it",
+            "year": "2018",
+            "description": "Custom tattoo for Stuart.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 90,
+            "path": "/images/sharkhead.png",
+            "title": "A Winning Combination",
+            "year": "2019",
+            "description": "Custom tattoo for @sirceiriog.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 91,
+            "path": "/images/sam1.png",
+            "title": "Goodbye, Chunky Rice (1)",
+            "year": "2018",
+            "description": "Tattoo for Sam, from Goodbye, Chunky Rice.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 92,
+            "path": "/images/sam2.png",
+            "title": "Goodbye, Chunky Rice (2)",
+            "year": "2018",
+            "description": "Tattoo for Sam, from Goodbye, Chunky Rice.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 93,
+            "path": "/images/safe.png",
+            "title": "Safe in your Skin",
+            "year": "2018",
+            "description": "Custom tattoo for Maddy.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 94,
+            "path": "/images/sadghost.png",
+            "title": "Ghosts Cry Too",
+            "year": "2018",
+            "description": "Custom tattoo for Carlie.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 95,
+            "path": "/images/rabbitskull.png",
+            "title": "Bonehead",
+            "year": "2018",
+            "description": "Custom tattoo for Maddi.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 96,
+            "path": "/images/sharkhead.png",
+            "title": "A Winning Combination",
+            "year": "2019",
+            "description": "Custom tattoo for @sirceiriog.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 97,
+            "path": "/images/popart1.png",
+            "title": "In the Car",
+            "year": "2019",
+            "description": "Tattoo for anonymous, based off of Roy Lichtenstein piece.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 98,
+            "path": "/images/pinecone.png",
+            "title": "Pine Cone",
+            "year": "2018",
+            "description": "Custom tattoo for Emma.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 99,
+            "path": "/images/pat.png",
+            "title": "Pat the Bunny",
+            "year": "2018",
+            "description": "Custom tattoo for Shannon, lyrics from Pat the Bunny.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 100,
+            "path": "/images/morel.png",
+            "title": "Morel",
+            "year": "2019",
+            "description": "Tattoo for anonymous.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 101,
+            "path": "/images/monroe.png",
+            "title": "Marilyn Monroe",
+            "year": "2018",
+            "description": "Tattoo for anonymous, based off of Andy Warhol piece.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 102,
+            "path": "/images/misfit.png",
+            "title": "Misfit Toy",
+            "year": "2018",
+            "description": "Custom tattoo for self, based off of Rudolph the Red Nosed Reindeer.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 103,
+            "path": "/images/maggie.png",
+            "title": "Bouquet",
+            "year": "2017",
+            "description": "Tattoo for Maggie.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 104,
+            "path": "/images/lightbulb.png",
+            "title": "A Bright Idea",
+            "year": "2017",
+            "description": "Custom tattoo for Alex.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 105,
+            "path": "/images/judas.png",
+            "title": "Judas Leaf",
+            "year": "2016",
+            "description": "Custom tattoo for Andy.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 106,
+            "path": "/images/gumball.png",
+            "title": "Gumball",
+            "year": "2016",
+            "description": "Custom tattoo for Max.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 107,
+            "path": "/images/jacq.png",
+            "title": "Bleeding Heart",
+            "year": "2017",
+            "description": "Custom tattoo for Jacqueline.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 108,
+            "path": "/images/helicopter.png",
+            "title": "Helicopter",
+            "year": "2019",
+            "description": "Custom tattoo for self.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 109,
+            "path": "/images/harry.png",
+            "title": "Comic Book",
+            "year": "2018",
+            "description": "Custom tattoo for Harry, number and Nirvana tattoo were pre-existing.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 110,
+            "path": "/images/gnasher.png",
+            "title": "Gnasher",
+            "year": "2019",
+            "description": "Tattoo for @sirceiriog, based off of Beano comic.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 111,
+            "path": "/images/dinoskull.png",
+            "title": "No Bones About it",
+            "year": "2019",
+            "description": "Custom tattoo for Sabrina.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 112,
+            "path": "/images/dino.png",
+            "title": "Cookie Cutter",
+            "year": "2018",
+            "description": "Custom tattoo for Jackson.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 113,
+            "path": "/images/devil.png",
+            "title": "The Devil Among Us",
+            "year": "2018",
+            "description": "Custom tattoo for Jess.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 114,
+            "path": "/images/cover.png",
+            "title": "Cover Up",
+            "year": "2018",
+            "description": "Custom cover up tattoo for anonymous.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 115,
+            "path": "/images/brainzap.png",
+            "title": "Brain Zap",
+            "year": "2018",
+            "description": "Custom tattoo for self.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 116,
+            "path": "/images/bikefish.png",
+            "title": "Bicycle Fish",
+            "year": "2018",
+            "description": "Custom tattoo for anonymous.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 117,
+            "path": "/images/bigfoot.png",
+            "title": "Sasquatch",
+            "year": "2018",
+            "description": "Custom tattoo for Jake.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 118,
+            "path": "/images/batskull.png",
+            "title": "Bat Skull",
+            "year": "2018",
+            "description": "Custom tattoo for Lani.",
+            "materials": "Ink"
+        },
+        {
+            "type": "tattoo",
+            "id": 119,
+            "path": "/images/colorheart.png",
+            "title": "Primary Purpose",
+            "year": "2018",
+            "description": "Custom tattoo for Christian.",
+            "materials": "Ink"
+        },
+        {
+            "type": "illustration",
+            "id": 120,
+            "path": "/images/slurp.png",
+            "title": "Slurp",
+            "year": "2019",
+            "description": "Who doesn't love a lollipop?",
+            "materials": "Pen, digital"
+        },
+        {
+            "type": "illustration",
+            "id": 121,
+            "path": "/images/skullcrystal.png",
+            "title": "Rock Hard",
+            "year": "2019",
+            "description": "Gnash on some gnosh.",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 122,
+            "path": "/images/possum.png",
+            "title": "Play Dead",
+            "year": "2019",
+            "description": "The mighty trash king.",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 123,
+            "path": "/images/punksnotdead.png",
+            "title": "Punk Never Dies",
+            "year": "2019",
+            "description": "Simply can't be killed.",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 124,
+            "path": "/images/platygastroid.png",
+            "title": "Platygastroidea for Elijah Talamas",
+            "year": "2016",
+            "description": "Illustration of a Platygastroidea species for Elijah Talamas, at the Smithsonian Natural History Museum in Washington, D.C.",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 125,
+            "path": "/images/notagain.png",
+            "title": "Not Again",
+            "year": "2019",
+            "description": "Again? Really?",
+            "materials": "Pen, digital"
+        },
+        {
+            "type": "illustration",
+            "id": 126,
+            "path": "/images/morelstipple.png",
+            "title": "Mighty Mighty Morel",
+            "year": "2018",
+            "description": "Remember to cook before eating.",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 127,
+            "path": "/images/mandrake.png",
+            "title": "Mandrake",
+            "year": "2018",
+            "description": "aaaaAAAAAA!",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 128,
+            "path": "/images/lampman.png",
+            "title": "Lampman",
+            "year": "2017",
+            "description": "He keeps the streets alight.",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 129,
+            "path": "/images/knifelick.png",
+            "title": "Cut",
+            "year": "2019",
+            "description": "Careful, she's sharp.",
+            "materials": "Pen, digital"
+        },
+        {
+            "type": "illustration",
+            "id": 130,
+            "path": "/images/hurtsgood.png",
+            "title": "Hurts so Good",
+            "year": "2018",
+            "description": "Ouch but...also yes.",
+            "materials": "Pen, digital"
+        },
+        {
+            "type": "illustration",
+            "id": 131,
+            "path": "/images/fineillgo.png",
+            "title": "Fine I'll Go",
+            "year": "2019",
+            "description": "If you really want me to....",
+            "materials": "Pen, digital"
+        },
+        {
+            "type": "illustration",
+            "id": 132,
+            "path": "/images/dogskull.png",
+            "title": "Dog Skull",
+            "year": "2018",
+            "description": "Man's best friend.",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 133,
+            "path": "/images/demonbaby.png",
+            "title": "A Gift",
+            "year": "2018",
+            "description": "He thinks you're very pretty.",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 134,
+            "path": "/images/deathcomes.png",
+            "title": "Death Comes for you",
+            "year": "2019",
+            "description": "I see it right over there, it just ducked behind a corner.",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 135,
+            "path": "/images/chickenfoot.png",
+            "title": "Yellow Bellied",
+            "year": "2018",
+            "description": "Never forget to run.",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 136,
+            "path": "/images/caterpillar.png",
+            "title": "Caterpillar",
+            "year": "2019",
+            "description": "So voluptuous, truly a specimen.",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 137,
+            "path": "/images/cactusman.png",
+            "title": "Cactusman",
+            "year": "2017",
+            "description": "C a m o u f l a g e.",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 137,
+            "path": "/images/brokenleg.png",
+            "title": "Like a Twig",
+            "year": "2017",
+            "description": "I heard a crack.",
+            "materials": "Pen"
+        },
+        {
+            "type": "illustration",
+            "id": 137,
+            "path": "/images/amonite.png",
+            "title": "Nautilus",
+            "year": "2019",
+            "description": "Sea-worthy I'd say.",
+            "materials": "Pen"
         }
     ]
 }
