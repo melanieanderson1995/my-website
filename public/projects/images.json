@@ -1407,6 +1407,178 @@
             "year": "2019",
             "description": "Sea-worthy I'd say.",
             "materials": "Pen"
+        },
+
+        {
+            "type": "sculpture",
+            "id": 140,
+            "path": "/images/pierre-1.png",
+            "title": "Platycryptus undatus (1)",
+            "year": "2021",
+            "description": "Tan Jumping Spider.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 141,
+            "path": "/images/pierre-2.png",
+            "title": "Platycryptus undatus (2)",
+            "year": "2021",
+            "description": "Tan Jumping Spider.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 142,
+            "path": "/images/pierre-3.png",
+            "title": "Platycryptus undatus (3)",
+            "year": "2021",
+            "description": "Tan Jumping Spider.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 143,
+            "path": "/images/pierre-4.png",
+            "title": "Platycryptus undatus (4)",
+            "year": "2021",
+            "description": "Tan Jumping Spider.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 144,
+            "path": "/images/pierre-5.png",
+            "title": "Platycryptus undatus (5)",
+            "year": "2021",
+            "description": "Tan Jumping Spider.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 145,
+            "path": "/images/pierre-6.png",
+            "title": "Platycryptus undatus (6)",
+            "year": "2021",
+            "description": "Tan Jumping Spider.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 146,
+            "path": "/images/delilah-1.png",
+            "title": "Asbolus verrucosus (1)",
+            "year": "2021",
+            "description": "Blue Death-Feigning Beetle.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 147,
+            "path": "/images/delilah-2.png",
+            "title": "Asbolus verrucosus (2)",
+            "year": "2021",
+            "description": "Blue Death-Feigning Beetle.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 148,
+            "path": "/images/delilah-3.png",
+            "title": "Asbolus verrucosus (3)",
+            "year": "2021",
+            "description": "Blue Death-Feigning Beetle.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 149,
+            "path": "/images/delilah-4.png",
+            "title": "Asbolus verrucosus (4)",
+            "year": "2021",
+            "description": "Blue Death-Feigning Beetle.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 150,
+            "path": "/images/delilah-5.png",
+            "title": "Asbolus verrucosus (5)",
+            "year": "2021",
+            "description": "Blue Death-Feigning Beetle.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 151,
+            "path": "/images/delilah-6.png",
+            "title": "Asbolus verrucosus (6)",
+            "year": "2021",
+            "description": "Blue Death-Feigning Beetle.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 152,
+            "path": "/images/delilah-7.png",
+            "title": "Asbolus verrucosus (7)",
+            "year": "2021",
+            "description": "Blue Death-Feigning Beetle.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 153,
+            "path": "/images/homer-1.png",
+            "title": "Cycclommatus metallifer finae (1)",
+            "year": "2021",
+            "description": "Stag Beetle.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 154,
+            "path": "/images/homer-2.png",
+            "title": "Cycclommatus metallifer finae (2)",
+            "year": "2021",
+            "description": "Stag Beetle.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 155,
+            "path": "/images/homer-3.png",
+            "title": "Cycclommatus metallifer finae (3)",
+            "year": "2021",
+            "description": "Stag Beetle.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 156,
+            "path": "/images/homer-4.png",
+            "title": "Cycclommatus metallifer finae (4)",
+            "year": "2021",
+            "description": "Stag Beetle.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 157,
+            "path": "/images/homer-5.png",
+            "title": "Cycclommatus metallifer finae (5)",
+            "year": "2021",
+            "description": "Stag Beetle.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
+        },
+        {
+            "type": "sculpture",
+            "id": 158,
+            "path": "/images/homer-6.png",
+            "title": "Cycclommatus metallifer finae (6)",
+            "year": "2021",
+            "description": "Stag Beetle.",
+            "materials": "Yarn, styrofoam, wire, polyfill"
         }
     ]
 }
